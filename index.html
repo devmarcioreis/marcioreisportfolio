@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----------Autor---------->
+    <meta name="author" contente="Marcio Reis">
+    <meta name="description" contente="Portfólio do desenvolvedor front-end Marcio Reis">
+    <meta name="keywords" contente="Portfolio, html, css, front-end, JavaScript, Desenvolvimento, React, React Native, Angular, NodeJS, Vue, Android, IOS, HTTP, SEO, Scrum, Bootstrap, Git, GitHub, Tailwind, Regex, QA, Php, TypeScript">
+    <!----------Icon---------->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!----------CSS---------->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/lightslider.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <title>M:)REISS | Portfólio Marcio Reis</title>
+</head>
+
+<body>
+
+    <!----------Navbar---------->
+    <nav>
+        <div class="nav__container">
+            <a href="index.html" class="nav__logo">M<span>:)</span>REISS</a>
+
+            <ul class="nav__links">
+                <li><a href="index.html" class="active"><i class="uil uil-estate"></i>Home</a></li>
+                <li><a href="#sobre"><i class="uil uil-user-square"></i>Sobre</a></li>
+                <li><a href="#servicos"><i class="uil uil-copy"></i>Meus serviços</a></li>
+                <li><a href="#portfolio"><i class="uil uil-clipboard-notes"></i>Portfólio</a></li>
+                <li><a href="#"><i class="uil uil-file-download-alt"></i>Meu currículo</a></li>
+                <li><a href="#contato"><i class="uil uil-envelope-add"></i>Contato</a></li>
+            </ul>
+
+            <button class="nav__toggle-btn" id="nav__toggle-open"><i class="uil uil-bars"></i></button>
+
+            <button class="nav__toggle-btn" id="nav__toggle-close"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+
+    <!----------Header---------->
+    <header>
+        <!----------Header Profile---------->
+        <section class="header__profile">
+            <div class="header__profile-content">
+
+                <!----------Header Left---------->
+                <article class="profile-left">
+                    <h1>Oi, eu sou <br><span>Marcio Reis</span></h1>
+                    <h2>Desenvolvedor Front-end Freelancer</h2>
+                    <p>Sempre estudando, aprendendo novas tecnologias, me preparando para o futuro na área que gosto, e sempre correspondendo com a expectativa e necessidade de meus clientes e amigos.</p>
+
+                    <p class="profile-language">
+                        Gosto de trabalhar com:
+                        <i class="uil uil-html5-alt html"></i> <i class="uil uil-css3-simple css"></i> <i class="uil uil-java-script js"></i> <i class="uil uil-react react"></i>
+                    </p>
+
+                    <a href="#" class="profile-btn"><i class="uil uil-comment-exclamation"></i> Fale comigo agora</a>
+                </article>
+
+                <!----------Header Right---------->
+                <aside class="profile-right">
+                    <img src="assets/img/profile.png" alt="Imagem de perfil">
+
+                    <ul class="profile-socials">
+                        <li><a href="#"><i class="uil uil-linkedin"></i></a></li>
+                        <li><a href="#"><i class="uil uil-github"></i></a></li>
+                        <li><a href="#"><i class="uil uil-twitter"></i></a></li>
+                        <li><a href="#"><i class="uil uil-instagram-alt"></i></a></li>
+                    </ul>
+                </aside>
+            </div>
+
+            <!----------Header Slider---------->
+            <div class="header__slider">
+                <h3><i class="uil uil-edit"></i> Meus Conhecimentos</h3>
+
+                <ul id="auto">
+                    <li>
+                        <div class="slider__box">
+                            <img src="assets/img/slider/angular.jpg" alt="Angular">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider__box">
+                            <img src="assets/img/slider/css.jpg" alt="Angular">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider__box">
+                            <img src="assets/img/slider/html.jpg" alt="Angular">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider__box">
+                            <img src="assets/img/slider/javascript.jpg" alt="Angular">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider__box">
+                            <img src="assets/img/slider/php.jpg" alt="Angular">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider__box">
+                            <img src="assets/img/slider/react.jpg" alt="Angular">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider__box">
+                            <img src="assets/img/slider/vue.jpg" alt="Angular">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider__box">
+                            <img src="assets/img/slider/javascript.jpg" alt="Angular">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider__box">
+                            <img src="assets/img/slider/css.jpg" alt="Angular">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+    </header>
+
+    <!----------Main---------->
+    <main>
+
+        <!----------Main Sobre---------->
+        <section class="sobre" id="sobre">
+            <h4>Sobre</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ipsa pariatur magnam suscipit qui, voluptatum consequatur labore. Non ducimus impedit in nesciunt assumenda asperiores provident, explicabo reiciendis at debitis perspiciatis?</p>
+        </section>
+
+        <!----------Main Serviços---------->
+        <section class="servicos" id="servicos">
+            <h4>Serviços</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ipsa pariatur magnam suscipit qui, voluptatum consequatur labore. Non ducimus impedit in nesciunt assumenda asperiores provident, explicabo reiciendis at debitis perspiciatis?</p>
+        </section>
+
+        <!----------Main Portfólio---------->
+        <section class="portfolio" id="portfolio">
+            <h4>Portfólio</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ipsa pariatur magnam suscipit qui, voluptatum consequatur labore. Non ducimus impedit in nesciunt assumenda asperiores provident, explicabo reiciendis at debitis perspiciatis?</p>
+        </section>
+
+        <!----------Main Contato---------->
+        <section class="contato" id="contato">
+            <h4>Contato</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ipsa pariatur magnam suscipit qui, voluptatum consequatur labore. Non ducimus impedit in nesciunt assumenda asperiores provident, explicabo reiciendis at debitis perspiciatis?</p>
+        </section>
+    </main>
+
+    <!----------Footer---------->
+    <footer>
+        <section class="footer__container">
+
+            <!----------Footer Left---------->
+            <div class="footer__left">
+                <h5>Desenvolvimento</h5>
+                <p>Site desenvolvido utilizando:</p>
+                <i class="uil uil-html5"></i>
+                <i class="uil uil-css3-simple"></i>
+                <i class="uil uil-java-script"></i>
+            </div>
+
+            <!----------Footer Midle---------->
+            <div class="footer__midle">
+                <h5>Dispositivos</h5>
+                <p>Acesse em seu dispositivo favorito, site responsivo.</p>
+                <i class="uil uil-tv-retro"></i>
+                <i class="uil uil-desktop"></i>
+                <i class="uil uil-mobile-android"></i>
+            </div>
+
+            <!----------Footer Right---------->
+            <div class="footer__right">
+                <h5>Acesse:</h5>
+                <ul class="footer-socials">
+                    <li><a href="#"><i class="uil uil-linkedin"></i></a></li>
+                    <li><a href="#"><i class="uil uil-github"></i></a></li>
+                    <li><a href="#"><i class="uil uil-twitter"></i></a></li>
+                    <li><a href="#"><i class="uil uil-instagram-alt"></i></a></li>
+                </ul>
+            </div>
+
+            <!----------Footer Text---------->
+            <div class="footer__text">
+                <h5>Projeto</h5>
+                <p>Desenvolvido por:</p>
+                <a href="index.html">M<span>:)</span>REISS</a>
+                <p>&copy; 2022 Todos os direitos reservados.</p>
+            </div>
+
+        </section>
+    </footer>
+
+
+
+    <!----------JavaScript---------->
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/JQuery3.3.1.js"></script>
+    <script src="assets/js/lightslider.js"></script>
+    <script src="assets/js/slider.js"></script>
+</body>
+</html>
