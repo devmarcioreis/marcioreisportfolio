@@ -306,17 +306,20 @@ main {
     text-align: center;
 }
 .servicos-img i {
-    font-size: 12rem;
+    font-size: 10rem;
     color: var(--white-color);
 }
 .servicos-card {
     width: 100%;
     height: 100%;
     background: var(--white-color);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 .card-text {
-    background: var(--hover-color);
+    background: linear-gradient(to right, var(--bg-color), var(--bg1-color));
     height: 50%;
+    border: 1px solid var(--white-color);
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
 }
@@ -340,7 +343,6 @@ main {
 /*==========Main Portfólio==========*/
 main .portfolio {
     width: 90vw;
-    height: 100vh;
     margin: auto;
     margin-bottom: 2rem;
 }
@@ -348,8 +350,8 @@ main .portfolio {
 /*==========Main Contato==========*/
 main .contato {
     width: 90vw;
-    height: 100vh;
     margin: auto;
+    margin-bottom: 2rem;
 }
 
 /*==========Footer==========*/
