@@ -27,6 +27,7 @@
 
     --white-color: #ffffff;
     --dark-color: #000;
+    --section-color: #7728ffde;
 
     --hover-color: #DD2651;
     --hover-bg-color: rgba(255, 255, 255, 0.137);
@@ -246,7 +247,7 @@ main {
 .sobre {
     width: 90vw;
     margin: auto;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 }
 .sobre__container .sobre__box {
     padding: 1.8rem;
@@ -288,68 +289,107 @@ main {
 /*==========Main Serviços==========*/
 .servicos {
     width: 90vw;
+    height: 100vh;
     margin: auto;
     margin-bottom: 2rem;
-}
-.servicos__container {
-    width: 100%;
-    height: 570px;
-    perspective: 1000px;
-    padding-top: 1.5rem;
-    margin: auto;
-}
-.servicos-img {
-    top: 5rem;
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    text-align: center;
-}
-.servicos-img i {
-    font-size: 10rem;
-    color: var(--white-color);
-}
-.servicos-card {
-    width: 100%;
-    height: 100%;
-    background: var(--white-color);
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-.card-text {
-    background: linear-gradient(to right, var(--bg-color), var(--bg1-color));
-    height: 50%;
-    border: 1px solid var(--white-color);
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-}
-.card-text h4 {
-    padding-top: 1rem;
-    font-size: 2rem;
-    color: var(--white-color);
-    text-align: center;
-    opacity: 0.4;
-}
-.servicos-bottom {
-    padding: 1rem 1rem;
-}
-.servicos-bottom p {
-    font-size: var(--font-p-size);
-    color: var(--dark-color);
-    text-align: center;
-    margin-bottom: .5rem;
 }
 
 /*==========Main Portfólio==========*/
-main .portfolio {
-    width: 90vw;
+.portfolio {
+    width: 100vw;
     margin: auto;
     margin-bottom: 2rem;
+    padding-top: 1rem;
 }
+.portfolio__slider {
+    width: 90%;
+    margin: auto;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-image: linear-gradient(to top, var(--btn-color), var(--hover-color));
+    text-align: center;
+}
+.portfolio-text {
+    width: 95%;
+    margin: auto;
+}
+.portfolio-text h4 {
+    font-size: 1.5rem;
+    color: var(--font-title-color);
+    padding: 1rem 0;
+}
+.portfolio-text p {
+    font-size: var(--font-p-size);
+}
+.portfolio-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 17px rgba(0, 0, 0, 0.2);
+    margin: 1rem .7rem;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 280px;
+    background: var(--transparent-color);
+}
+.box-img {
+    width: 100%;
+    height: 270px;
+}
+.box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box-title {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--section-color);
+    padding-top: 7px;
+    font-weight: 600;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+.box-title i {
+    letter-spacing: .5rem;
+}
+.box-title a {
+    text-transform: uppercase;
+    color: var(--white-color);
+    font-size: 1rem;
+    letter-spacing: .7rem;
+}
+.card-text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    background: var(--transparent-color);
+    border: none;
+}
+.card-text strong {
+    font-size: 1.2rem;
+    color: var(--white-color);
+}
+.card-text p {
+    font-size: 1rem;
+    color: var(--font-p-color);
+}
+
 
 /*==========Main Contato==========*/
 main .contato {
     width: 90vw;
+    height: 100vh;
     margin: auto;
     margin-bottom: 2rem;
 }
