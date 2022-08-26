@@ -330,7 +330,7 @@ main {
     margin: 1rem .7rem;
     border-radius: 10px;
     overflow: hidden;
-    width: 280px;
+    width: 250px;
     background: var(--transparent-color);
 }
 .box-img {
