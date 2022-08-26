@@ -1,0 +1,350 @@
+@charset "UTF-8";
+
+/*==========Google Fonts - Nunito==========*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/*==========Google Fonts - Poppins==========*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*==========Root==========*/
+:root {
+    --font-principal: 'Poppins', sans-serif;
+    --font-logo: 'Nunito';
+
+    --font-title-size: 24px;
+    --font-title-color: #f9f9f9;
+
+    --font-p-size: 15px;
+    --font-p-color: #cacaca;
+
+    --font-footer-color: #ccc;
+    --font-footer-align: inherit;
+    --font-footer-size: 11px;
+
+    --bg-color: #090B13;
+    --bg1-color: #15133B;
+
+    --white-color: #ffffff;
+    --dark-color: #000;
+
+    --hover-color: #DD2651;
+    --hover-bg-color: rgba(255, 255, 255, 0.137);
+
+    --icon1-color: #E44D25;
+    --icon2-color: #1E4CE5;
+    --icon3-color: #F7E018;
+    --icon4-color: #00D8FF;
+
+    --btn-color: #7828FF;
+    --btn-text-color: #fff;
+
+    --social-color: #3e7beb;
+
+    --box-color: #1A0E45;
+    --shadow: 0 2px 4px rgba(0, 0, 0, .1);
+
+    --transparent-color: rgba(0, 0, 0, 0);
+}
+
+/*==========Reset CSS==========*/
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+}
+
+/*==========Body==========*/
+body {
+    background: linear-gradient(to right, var(--bg-color), var(--bg1-color));
+    margin: 3rem;
+    font-family: var(--font-principal);
+    font-style: normal;
+    font-size: .938rem;
+    color: var(--white-color);
+    line-height: 1.6rem;
+}
+h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #141414;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*==========Header==========*/
+.header {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.nav {
+    height: 3rem;
+    max-width: 1024px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 2rem);
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.nav__toggle {
+    font-size: 1.7rem;
+    cursor: pointer;
+    color: var(--white-color);
+}
+.nav__logo a {
+    font-family: var(--font-logo);
+    font-weight: 900;
+    color: var(--white-color);
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.nav__logo a span {
+    font-family: var(--font-logo);
+    color: var(--hover-color);
+}
+.nav__item {
+    margin-top: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+.nav__social {
+    margin-top: 4rem;
+    display: flex;
+    gap: 1.4rem;
+}
+.nav__social i {
+    font-size: 1.5rem;
+    color: var(--social-color);
+}
+
+/*==========Media Query Nav==========*/
+@media (max-width: 768px) {
+    .nav__menu {
+        position: fixed;
+        top: 3rem;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(to right, var(--bg-color), var(--bg1-color));
+        transition: all 1s ease;
+    }
+    .nav__list {
+        margin-left: 1rem;
+    }
+    .nav__item a {
+        color: var(--white-color);
+        font-size: 1rem;
+    }
+
+}
+
+/*==========Class JS==========*/
+.show {
+    left: 0;
+}
+.scroll-header {
+    background: var(--bg-color);
+}
+
+/*==========Main==========*/
+main {
+    width: 100vw;
+    margin-left: -3rem;
+}
+.main__profile {
+    width: 92%;
+    margin: auto;
+}
+
+/*==========Main Left==========*/
+.profile-left {
+    padding-top: 1.7rem;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+.profile-left h1 {
+    font-size: 1.5rem;
+    color: var(--hover-color);
+}
+.profile-left h1 span {
+    font-size: 3rem;
+    color: var(--white-color);
+    line-height: 2.5rem;
+}
+.profile-left h2 {
+    color: var(--social-color);
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+.profile-left p {
+    text-align: justify;
+    color: var(--font-p-color);
+}
+.profile-language {
+    margin-top: 1.5rem;
+    margin-bottom: 2.2rem;
+    color: var(--font-p-color);
+}
+.profile-language i {
+    font-size: 1.7rem;
+    letter-spacing: .7rem;
+}
+.html {
+    color: var(--icon1-color);
+}
+.css {
+    color: var(--icon2-color);
+}
+.js {
+    color: var(--icon3-color);
+}
+.react {
+    color: var(--icon4-color);
+}
+.profile-btn {
+    background: var(--btn-color);
+    border-radius: 4px;
+    padding: .7rem;
+    margin: auto;
+    display: flex;
+}
+.profile-btn a {
+    color: var(--btn-text-color);
+    font-size: 1.1rem;
+    margin: auto;
+}
+
+/*==========Main Right==========*/
+.profile-right{
+    margin-bottom: 2rem;
+}
+.profile-right img {
+    width: 80%;
+    margin: auto;
+}
+
+/*==========Main Slider==========*/
+.main__slider {
+    width: 90%;
+    margin: auto;
+}
+.main__slider h3 {
+    text-transform: uppercase;
+    font-size: .8rem;
+    margin-bottom: .5rem;
+    margin-left: .7rem;
+}
+.slider__box {
+    width: 240px;
+    height: 130px;
+    border-radius: 10px;
+    margin: 0 7px;
+    overflow: hidden;
+}
+.slider__box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*==========Main Sobre==========*/
+main .sobre {
+    width: 90vw;
+    height: 100vh;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+/*==========Main Projetos==========*/
+main .servicos {
+    width: 90vw;
+    height: 100vh;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+/*==========Main Portfólio==========*/
+main .portfolio {
+    width: 90vw;
+    height: 100vh;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+/*==========Main Contato==========*/
+main .contato {
+    width: 90vw;
+    height: 100vh;
+    margin: auto;
+}
+
+/*==========Footer==========*/
+footer {
+    width: 100vw;
+    margin-left: -3rem;
+    margin-bottom: -3rem;
+    padding: 0 0 1rem 0;
+    background: var(--bg-color);
+}
+.footer__container {
+    width: 92%;
+    margin: auto;
+}
+.footer__box h5 {
+    padding-top: 1rem;
+    font-size: 1.3rem;
+    color: var(--font-title-color);
+}
+.footer__box p {
+    font-size: .9rem;
+    color: var(--font-p-color);
+}
+.footer__box i {
+    color: var(--social-color);
+    font-size: 1.7rem;
+    padding-bottom: 2rem;
+    letter-spacing: 2rem;
+}
+.footer__by {
+    margin-top: 1.5rem;
+}
+.footer__by h5 {
+    font-size: 1.3rem;
+    color: var(--font-title-color);
+}
+.footer__by p {
+    font-size: .9rem;
+    color: var(--font-p-color);
+}
+.footer__by a {
+    font-family: var(--font-logo);
+    font-weight: 900;
+    color: var(--white-color);
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.footer__by a span {
+    font-family: var(--font-logo);
+    color: var(--hover-color);
+}
+.footer__copy {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: var(--font-p-color);
+}
+
