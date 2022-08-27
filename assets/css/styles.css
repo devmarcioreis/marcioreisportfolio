@@ -221,7 +221,7 @@ article .article-btn {
     background: var(--color-dark);
     padding: 1.8rem;
     border-radius: 10px;
-    box-shadow: 0 0 20rem var(--color-purple);
+    box-shadow: 0 0 30rem var(--color-purple);
     margin: 3rem auto;
 }
 .sobre-text p {
@@ -269,7 +269,7 @@ article .article-btn {
 .portfolio__container {
     margin: 3rem auto;
     border-radius: 5px;
-    box-shadow: 0 0 20rem var(--color-purple);
+    box-shadow: 0 0 30rem var(--color-purple);
 }
 .portfolio-text {
     text-align: center;
@@ -370,20 +370,17 @@ article .article-btn {
     background: var(--color-form-bg);
 }
 .contato-text {
-    color: var(--color-icon-footer);
     margin: auto;
     text-align: center;
-}
-.contato-text h4 {
-    padding: .5rem 0;
-    font-size: 1.5rem;
-}
-.contato-text i {
-    font-size: 1.5rem;
-    color: var(--color-blue);
+    font-size: 1rem;
+    padding-top: .5rem;
 }
 .contato-text p {
-    color: var(--color-font-p);
+    color: var(--color-icon-footer);
+}
+.contato-text i {
+    font-size: 1.1rem;
+    color: var(--color-btn);
 }
 .form-contact {
     display: table;
