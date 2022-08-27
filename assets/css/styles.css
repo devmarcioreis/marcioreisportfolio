@@ -269,7 +269,7 @@ article .article-btn {
 .portfolio__container {
     margin: 3rem auto;
     border-radius: 5px;
-    box-shadow: 0 0 30rem var(--color-purple);
+    box-shadow: 0 0 30rem var(--color-logo);
 }
 .portfolio-text {
     text-align: center;
