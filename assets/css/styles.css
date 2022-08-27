@@ -31,6 +31,8 @@
     --color-btn: #7828FF;
     --color-blue: #3e7beb;
     --color-box: #1A0E45;
+    --color-form-bg: #ecf0f3;
+    --color-shadow-form: inset 8px 8px 8px #ccc9ca, inset -8px -8px 8px #fff;
     --color-transparent: rgba(0, 0, 0, 0);
     --color-gradient: linear-gradient(to left, var(--color-blue), var(--color-logo));
 
@@ -252,10 +254,11 @@ article .article-btn {
 
 /*==========Main Serviços==========*/
 .servicos__cards {
-    background: var(--color-logo);
+    background: var(--color-glass);
     border-radius: 10px;
     padding: 1.8rem;
     margin: 3rem auto;
+    height: 100vh;
 }
 .servicos__text p {
     margin: 0 0 1rem 0;
@@ -266,6 +269,7 @@ article .article-btn {
 .portfolio__container {
     margin: 3rem auto;
     border-radius: 5px;
+    box-shadow: 0 0 20rem var(--color-purple);
 }
 .portfolio-text {
     text-align: center;
@@ -354,16 +358,81 @@ article .article-btn {
 }
 
 /*==========Main Contato==========*/
-.contato__cards {
-    background: var(--color-logo);
-    border-radius: 10px;
-    padding: 1.8rem;
+.contato {
     margin: 3rem auto;
 }
-.contato__text p {
-    margin: 0 0 1rem 0;
+.contato-box {
+    display: table;
+}
+.contato-form {
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: var(--color-form-bg);
+}
+.contato-text {
+    color: var(--color-icon-footer);
+    margin: auto;
+    text-align: center;
+}
+.contato-text h4 {
+    padding: .5rem 0;
+    font-size: 1.5rem;
+}
+.contato-text i {
+    font-size: 1.5rem;
+    color: var(--color-blue);
+}
+.contato-text p {
     color: var(--color-font-p);
 }
+.form-contact {
+    display: table;
+    margin: auto;
+}
+.form-contact input, .form-contact textarea {
+    border: none;
+    background: none;
+    font-size: 1rem;
+    color: var(--color-dark);
+    padding: 1rem;
+}
+.form-contact textarea {
+    height: 100px;
+    resize: none;
+}
+.form-item {
+    padding: 0px 40px;
+    border-radius: 10px;
+    box-shadow: var(--color-shadow-form);
+}
+.submit-btn{
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: var(--color-white);
+    background: var(--color-purple);
+    border: none;
+}
+
+
+/*==========Media Query Fomrulário contato==========*/
+@media (max-width: 768px) {
+    .contato-box {
+        width: 100%;
+    }
+    .form-item {
+        width: 100%;
+        float: none;
+        margin: 25px 0px;
+    }
+    .submit-btn {
+        margin: 1rem 1rem 1rem 2.2rem;
+    }
+}
+
+
 /*==========Footer==========*/
 footer {
     background: var(--color-2);
