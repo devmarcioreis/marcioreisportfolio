@@ -21,7 +21,7 @@
     --color-glass: rgba(255, 255, 255, 0.051);
     --color-white: #ffffff;
     --color-dark: #000;
-    --color-purple: #7728ffde;
+    --color-purple: #7728ff;
     --color-hover-bg: rgba(255, 255, 255, 0.137);
     --color-icon-html: #E44D25;
     --color-icon-css: #1E4CE5;
@@ -108,15 +108,14 @@ img {
     margin: 2rem 0;
 }
 .nav__social {
-    margin-top: 4rem;
     display: flex;
-    gap: 1rem;
-}
-.nav__social p {
-    margin: auto 1rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 5rem;
 }
 .nav__social i {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     color: var(--color-blue);
 }
 
@@ -397,8 +396,18 @@ footer {
     font-family: var(--logo-font);
     color: var(--color-logo);
 }
+.footer__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.4rem;
+}
+.footer__social i {
+    font-size: 1.5rem;
+    color: var(--color-white);
+}
 .footer__copy {
     text-align: center;
     margin-top: 1.5rem;
 }
-
