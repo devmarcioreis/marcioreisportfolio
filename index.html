@@ -20,10 +20,10 @@
 </head>
 
 <body>
-    
+
+    <!----------Header---------->
     <header class="header" id="header">
         <nav class="nav">
-
             <div class="nav__toggle" id="nav-toggle">
                 <i class="uil uil-apps"></i>
             </div>
@@ -40,47 +40,43 @@
                     <li class="nav__item"><a href="#portfolio" class="nav__link"><i class="uil uil-clipboard-notes"></i> Portfólio</a></li>
                     <li class="nav__item"><a href="#contato" class="nav__link"><i class="uil uil-envelope-add"></i> Contato</a></li>
                     <li class="nav__item"><a href="#" class="nav__link"><i class="uil uil-file-download-alt"></i> Meu currículo</a></li>
-
-                    <div class="nav__social">
-                        <p>Acesse:</p>
-                        <li><a href="#" class="nav__link"><i class="uil uil-linkedin"></i></a></li>
-                        <li><a href="#" class="nav__link"><i class="uil uil-github"></i></a></li>
-                        <li><a href="#" class="nav__link"><i class="uil uil-twitter"></i></a></li>
-                        <li><a href="#" class="nav__link"><i class="uil uil-instagram-alt"></i></a></li>
-                        <li><a href="#" class="nav__link"><i class="uil uil-telegram"></i></a></li>
-                        <li><a href="#" class="nav__link"><i class="uil uil-whatsapp-alt"></i></a></li>
-                    </div>
-
                 </ul>
-            </div>
 
+                <div class="nav__social">
+                    <p>Acesse:</p>
+                    <li><a href="#" class="nav__link"><i class="uil uil-linkedin"></i></a></li>
+                    <li><a href="#" class="nav__link"><i class="uil uil-github"></i></a></li>
+                    <li><a href="#" class="nav__link"><i class="uil uil-twitter"></i></a></li>
+                    <li><a href="#" class="nav__link"><i class="uil uil-instagram-alt"></i></a></li>
+                    <li><a href="#" class="nav__link"><i class="uil uil-telegram"></i></a></li>
+                    <li><a href="#" class="nav__link"><i class="uil uil-whatsapp-alt"></i></a></li>
+                </div>
+            </div>
         </nav>
     </header>
 
     <!----------Main---------->
-    <main>
+    <main class="main__container">
 
+        <!----------Main Profile Article---------->
         <section class="main__profile">
-            <div class="main__profile-content">
-
-                <!----------Main Left---------->
-                <article class="profile-left">
+                <article>
                     <h1>Oi, eu sou <br><span>Marcio Reis</span></h1>
                     <h2>Desenvolvedor Front-end</h2>
                     <p>Sempre estudando, aprendendo novas tecnologias, me preparando para o futuro na área que gosto, e sempre correspondendo com a expectativa e necessidade de meus clientes e amigos.</p>
 
-                    <div class="profile-btn">
+                    <div class="article-btn">
                         <a href="#"><i class="uil uil-comment"></i> Fale comigo agora</a>
                     </div>
                 </article>
 
-                <!----------Main Right---------->
+                <!----------Main profile Right---------->
                 <aside class="profile-right">
                     <img src="assets/img/profile.png" alt="Imagem de perfil">
                 </aside>
-            </div>
+         
 
-            <!----------Main Slider---------->
+            <!----------Main Profile Slider---------->
             <div class="main__slider">
                 <h3><i class="uil uil-book-open"></i> Meus Conhecimentos</h3>
 
@@ -132,71 +128,65 @@
                     </li>
                 </ul>
             </div>
-
         </section>
 
         <!----------Main Sobre---------->
         <section class="sobre" id="sobre">
-
-            <div class="sobre__container">
                 <div class="sobre__box">
-                    <div class="box">
-                        <div class="profile-photo">
-                            <img src="img/profile-1.png" alt="">
-                        </div>
-                        <div class="text">
-                            <p>Estudo análise e desenvolvimento de sistemas.
-                                Gosto de trabalahar utilizando HTML, CSS, JavaScrip e React.
-                            </p>
-                            <p>
-                                No momento trabalho como desenvolvedor Front-end freelancer.
-                                Gosto de por na tela os sonhos de meus clientes.<br>
-                                Poder materializar uma idéia é o que me motiva!
-                            </p>
-                        </div>
+                    <div class="sobre-text">
+                        <p>Estudo análise e desenvolvimento de sistemas.
+                            Gosto de trabalahar utilizando HTML, CSS, JavaScrip e React.
+                        </p>
+                        <p>
+                            No momento trabalho como desenvolvedor Front-end freelancer.
+                            Gosto de por na tela os sonhos de meus clientes.
+                            Poder materializar uma idéia é o que me motiva!
+                        </p>
                     </div>
+                    
+                    <img src="assets/img/profile.png" alt="Foto de perfil">
+ 
 
-                    <div class="sobre-profile">
-                        <img src="assets/img/profile.png" alt="Imagem de perfil">
-
+                    <div class="sobre-icons">
                         <i class="uil uil-html5-alt html"></i></i> <i class="uil uil-css3-simple css"></i>
-                        <i class="uil uil-java-script js"></i> <i class="uil uil-react react"></i>
-
+                            <i class="uil uil-java-script js"></i> <i class="uil uil-react react"></i>
                     </div>
                 </div>
-            </div>
-
         </section>
 
         <!----------Main Serviços---------->
         <section class="servicos" id="servicos">
-                <div class="servicos__container">
-                    <h4>Serviços</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi dolor ullam quos unde! Aspernatur non amet dicta corporis, labore ex numquam exercitationem reiciendis necessitatibus asperiores. Exercitationem error ad harum accusamus.</p>
+            <div class="servicos__cards">
+                <div class="servicos-text">
+                    <p>SITE EM DESENVOLVIMENTO!
+                    </p>
+                    <p>
+                        Acesso via celular funcionando algumas seções, para os demais dispositivos, ainda em construção.
+                    </p>
                 </div>
+            </div>
         </section>
 
         <!----------Main Portfólio---------->
         <section class="portfolio" id="portfolio">
             <div class="portfolio__container">
+                <div class="portfolio-text">
+                    <h4>Portfólio</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis rem 
+                    </p>
+                </div>
 
                 <div class="portfolio__slider">
-
-                    <div class="portfolio-text">
-                        <h4>Portfólio</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis rem 
-                        </p>
-                    </div>
-
                     <ul id="slider2">
                         <li>
                             <div class="portfolio-box">
                                 <div class="box-img">
                                     <div class="box-title">
-                                        <i class="uil uil-layers-alt"></i> <a href="#">Demo</a>
+                                        <i class="uil uil-eye"></i> <a href="#">Ver site</a>
                                     </div>
-                                    <img src="assets/img/slider/portfolio-img1.jpg" alt="">
+
+                                    <img src="assets/img/slider/portfolio-img1.jpg">
                                 </div>
                                 <div class="card-text">
                                     <strong>Projeto Esporte</strong>
@@ -208,9 +198,10 @@
                             <div class="portfolio-box">
                                 <div class="box-img">
                                     <div class="box-title">
-                                        <i class="uil uil-layers-alt"></i> <a href="#">Demo</a>
+                                        <i class="uil uil-eye"></i> <a href="#">Ver site</a>
                                     </div>
-                                    <img src="assets/img/slider/portfolio-img1.jpg" alt="">
+
+                                    <img src="assets/img/slider/portfolio-img1.jpg">
                                 </div>
                                 <div class="card-text">
                                     <strong>Projeto Esporte</strong>
@@ -222,9 +213,10 @@
                             <div class="portfolio-box">
                                 <div class="box-img">
                                     <div class="box-title">
-                                        <i class="uil uil-layers-alt"></i> <a href="#">Demo</a>
+                                        <i class="uil uil-eye"></i> <a href="#">Ver site</a>
                                     </div>
-                                    <img src="assets/img/slider/portfolio-img1.jpg" alt="">
+
+                                    <img src="assets/img/slider/portfolio-img1.jpg">
                                 </div>
                                 <div class="card-text">
                                     <strong>Projeto Esporte</strong>
@@ -236,9 +228,10 @@
                             <div class="portfolio-box">
                                 <div class="box-img">
                                     <div class="box-title">
-                                        <i class="uil uil-layers-alt"></i> <a href="#">Demo</a>
+                                        <i class="uil uil-eye"></i> <a href="#">Ver site</a>
                                     </div>
-                                    <img src="assets/img/slider/portfolio-img1.jpg" alt="">
+
+                                    <img src="assets/img/slider/portfolio-img1.jpg">
                                 </div>
                                 <div class="card-text">
                                     <strong>Projeto Esporte</strong>
@@ -246,6 +239,22 @@
                                 </div>
                             </div>
                         </li>
+                        <li>
+                            <div class="portfolio-box">
+                                <div class="box-img">
+                                    <div class="box-title">
+                                        <i class="uil uil-eye"></i> <a href="#">Ver site</a>
+                                    </div>
+
+                                    <img src="assets/img/slider/portfolio-img1.jpg">
+                                </div>
+                                <div class="card-text">
+                                    <strong>Projeto Esporte</strong>
+                                    <p>Projeto realizado utilizando HTML, CSS e JavaScript</p>
+                                </div>
+                            </div>
+                        </li>
+
                       </ul>
                 </div>
 
@@ -254,9 +263,17 @@
 
         <!----------Main Contato---------->
         <section class="contato" id="contato">
-            <h4>Contato</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ipsa pariatur magnam suscipit qui, voluptatum consequatur labore. Non ducimus impedit in nesciunt assumenda asperiores provident, explicabo reiciendis at debitis perspiciatis?</p>
+            <div class="contato__cards">
+                <div class="contato-text">
+                    <p>SITE EM DESENVOLVIMENTO!
+                    </p>
+                    <p>
+                        Acesso via celular funcionando algumas seções, para os demais dispositivos, ainda em construção.
+                    </p>
+                </div>
+            </div>
         </section>
+        
     </main>
   
     <!----------Footer---------->
@@ -272,7 +289,7 @@
 
             <div class="footer__box">
                 <h5>Dispositivos</h5>
-                <p>Site responsivel, acesse em seu dispositivo favorito.</p>
+                <p>Site responsivel, acesse em seu dispositivo:</p>
                 <i class="uil uil-tv-retro"></i>
                 <i class="uil uil-desktop"></i>
                 <i class="uil uil-mobile-android-alt"></i>
