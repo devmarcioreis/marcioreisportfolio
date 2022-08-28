@@ -14,19 +14,25 @@
     --color-logo: #DD2651;
     --color-font-p: #cacaca;
     --color-font-footer: #ccc;
+    --color-1: #090B13;
+    --color-2: #15133B;
+    --color-light: rgba(132, 139, 200, 0.18); 
     --color-glass: rgba(255, 255, 255, 0.051);
     --color-white: #ffffff;
     --color-dark: #000;
     --color-green: #2B7A0B;
     --color-purple: #7728ff;
+    --color-hover-bg: rgba(255, 255, 255, 0.137);
     --color-icon-html: #E44D25;
     --color-icon-css: #1E4CE5;
     --color-icon-js: #F7E018;
     --color-icon-react: #00D8FF;
     --color-icon-angular: #D6002F;
+    --color-icon-footer: #444B55;
     --color-btn: #7828FF;
     --color-blue: #3e7beb;
     --color-box: #1A0E45;
+    --color-form-bg: #ecf0f3;
     --color-transparent: rgba(0, 0, 0, 0);
 
 }
