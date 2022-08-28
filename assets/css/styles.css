@@ -435,21 +435,6 @@ textarea::placeholder {
     color: var(--color-white);
 }
 
-/*==========Media Query Fomrulário contato==========*/
-@media (max-width: 768px) {
-    .contato-box {
-        width: 100%;
-    }
-    .form-item {
-        width: 90%;
-        margin: 20px auto;
-    }
-    .submit-btn {
-        margin: 1rem 1rem 1rem 2.2rem;
-    }
-}
-
-
 /*==========Footer==========*/
 footer {
     background: var(--color-2);
