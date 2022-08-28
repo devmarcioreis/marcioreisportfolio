@@ -13,7 +13,6 @@
     --logo-font: 'Nunito';
     --color-logo: #DD2651;
     --color-font-p: #cacaca;
-    --color-a: #141414;
     --color-font-footer: #ccc;
     --color-1: #090B13;
     --color-2: #15133B;
@@ -64,10 +63,6 @@ ul {
     padding: 0;
     list-style: none;
 }
-a {
-    text-decoration: none;
-    color: var(--color-a);
-}
 img {
     max-width: 100%;
     height: auto;
@@ -111,10 +106,9 @@ img {
 }
 .nav__social {
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 1.5rem;
-    margin-top: 5rem;
+    margin-left: 1rem;
+    padding-top: 2rem;
 }
 .nav__social i {
     font-size: 1.5rem;
