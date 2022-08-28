@@ -21,20 +21,22 @@
     --color-glass: rgba(255, 255, 255, 0.051);
     --color-white: #ffffff;
     --color-dark: #000;
+    --color-green: #2B7A0B;
     --color-purple: #7728ff;
     --color-hover-bg: rgba(255, 255, 255, 0.137);
     --color-icon-html: #E44D25;
     --color-icon-css: #1E4CE5;
     --color-icon-js: #F7E018;
     --color-icon-react: #00D8FF;
+    --color-icon-angular: #D6002F;
     --color-icon-footer: #444B55;
     --color-btn: #7828FF;
     --color-blue: #3e7beb;
     --color-box: #1A0E45;
     --color-form-bg: #ecf0f3;
-    --color-shadow-form: inset 8px 8px 8px #ccc9ca, inset -8px -8px 8px #fff;
     --color-transparent: rgba(0, 0, 0, 0);
     --color-gradient: linear-gradient(to left, var(--color-blue), var(--color-logo));
+    --color-shadow-form: inset 8px 8px 8px #ccc9ca, inset -8px -8px 8px #fff;
 
 }
 
@@ -174,7 +176,7 @@ article h2 {
 }
 article p {
     color: var(--color-font-p);
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
 }
 article .article-btn {
     background: var(--color-btn);
@@ -188,56 +190,22 @@ article .article-btn {
     margin: auto;
 }
 
-/*==========Main Profile Right==========*/
-.profile-right {
-    display: none;
+/*==========Main Profile Conhecimentos==========*/
+.conhecimentos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 0 2rem 0;
 }
-
-/*==========Main Profile Slider==========*/
-.main__slider {
-    margin: 2rem auto;
-}
-.main__slider h3 {
-    text-transform: uppercase;
-    font-size: .9rem;
-    margin-bottom: .4rem;
-    letter-spacing: .1rem;
-}
-.slider__box {
-    width: 240px;
-    height: 130px;
-    border-radius: 5px;
-    margin: 0 7px;
-    overflow: hidden;
-}
-.slider__box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/*==========Main Sobre==========*/
-.sobre__box {
-    background: var(--color-dark);
-    padding: 1.8rem;
-    border-radius: 10px;
-    box-shadow: 0 0 30rem var(--color-purple);
-    margin: 3rem auto;
-}
-.sobre-text p {
-    text-align: center;
-    margin: 0 0 1rem 0;
-    color: var(--color-font-p);
-}
-.sobre__box img { 
-    width: 80%;
-    margin: auto;
-}
-.sobre-icons {
-    text-align: center;
-    letter-spacing: 1rem;
+.btn {
     font-size: 1.5rem;
-    margin-top: 1rem;
+    padding: 10px 0 13px 11px;
+    width: 45px;
+    height: 45px;
+    background: var(--color-2);
+    border: none;
+    border-radius: 50%;
+    margin: .4rem;
 }
 .html {
     color: var(--color-icon-html);
@@ -251,18 +219,72 @@ article .article-btn {
 .react {
     color: var(--color-icon-react);
 }
-
-/*==========Main Serviços==========*/
-.servicos__cards {
-    background: var(--color-glass);
-    border-radius: 10px;
-    padding: 1.8rem;
-    margin: 3rem auto;
-    height: 100vh;
+.angular {
+    color: var(--color-icon-angular);
 }
-.servicos__text p {
-    margin: 0 0 1rem 0;
+
+/*==========Main Sobre==========*/
+.sobre__box {
+    background: var(--color-dark);
+    padding: 1.8rem;
+    border-radius: 10px;
+    box-shadow: 0 0 30rem var(--color-purple);
+    margin: 3rem auto;
+}
+.sobre__box p {
     color: var(--color-font-p);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+/*==========Habilidades==========*/
+.habilidades h3 {
+    color: var(--color-white);
+    font-size: 1.2rem;
+}
+.habilidades hr {
+    width: 25%;
+    height: 5px;
+    background: var(--color-logo);
+    border-radius: 3px;
+    margin-top: 7px;
+    border: none;
+}
+.progresso {
+    position: relative;
+    margin: 40px 0 10px 0;
+    border-radius: 20px;
+    background: var(--color-glass);
+}
+.progresso span {
+    position: absolute;
+    top: -20px;
+    color: var(--color-font-p);
+    font-size: .8rem;
+}
+.barra-progresso {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: var(--color-white);
+}
+
+/*==========Progresso Cores==========*/
+.progresso:nth-child(3) .barra-progresso {
+    background: linear-gradient(90deg, var(--color-green), var(--color-icon-html));
+}
+.progresso:nth-child(4) .barra-progresso {
+    background: linear-gradient(90deg, var(--color-green), var(--color-icon-css));
+}
+.progresso:nth-child(5) .barra-progresso {
+    background: linear-gradient(90deg, var(--color-green), var(--color-icon-js));
+}
+.progresso:nth-child(6) .barra-progresso {
+    background: linear-gradient(90deg, var(--color-green), var(--color-icon-react));
+}
+.progresso:nth-child(7) .barra-progresso {
+    background: linear-gradient(90deg, var(--color-green), var(--color-icon-angular));
 }
 
 /*==========Main Portfólio==========*/
@@ -276,34 +298,23 @@ article .article-btn {
 .portfolio-text h4 {
     font-size: 1.2rem;
     letter-spacing: .4rem;
-    background: var(--color-gradient);
-    padding: .3rem 0;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
 }
 .portfolio-text p {
     color: var(--color-font-p);
-    padding: .5rem;
-    border-left: 1px solid var(--color-logo);
-    border-right: 1px solid var(--color-blue);
 }
 .portfolio__slider {
     text-align: center;
-    background: var(--color-gradient);
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
 }
 .portfolio-box {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 2px 2px 17px rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--color-purple);
     margin: 1rem .7rem;
     border-radius: 10px;
     overflow: hidden;
     width: 250px;
-    background: var(--transparent-color);
 }
 .box-img {
     width: 100%;
@@ -325,12 +336,13 @@ article .article-btn {
     width: 120px;
     height: 35px;
     border-radius: 0px 0px 10px 10px;
+    border: 1px solid var(--color-purple);
     box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.4);
     cursor: pointer;
 }
 .box-title i {
     letter-spacing: .2rem;
-    color: var(--color-font-p);
+    color: var(--color-blue);
 }
 .box-title a {
     color: var(--color-font-p);
@@ -353,6 +365,19 @@ article .article-btn {
     margin-bottom: .3rem;
 }
 .card-text p {
+    color: var(--color-font-p);
+}
+
+/*==========Main Serviços==========*/
+.servicos__cards {
+    background: var(--color-glass);
+    border-radius: 10px;
+    padding: 1.8rem;
+    margin: 3rem auto;
+    height: 100vh;
+}
+.servicos__text p {
+    margin: 0 0 1rem 0;
     color: var(--color-font-p);
 }
 
