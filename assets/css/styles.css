@@ -378,62 +378,6 @@ article .article-btn {
     color: var(--color-blue);
     font-size: 1.2rem;
 }
-.input-box {
-    position: relative;
-    margin: .8rem;
-}
-.input-box input {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    background: var(--color-glass);
-    color: var(--color-white);
-    border-radius: 5px;
-    font-size: 1em;
-    transition:all 0.5s ease;
-}
-.input-box span {
-    position: absolute;
-    left: 0;
-    padding: 15px;
-    pointer-events: none;
-    font-size: 1em;
-    color: var(--color-icon-footer);
-    transition:all 0.5s ease;
-}
-.input-box input:valid~span, .input-box input:focus~span {
-    color: var(--color-white);
-    transform: translateX(10px) translateY(-7px);
-    font-size: .8em;
-    padding: 1px 15px;
-    background: var(--color-blue);
-    letter-spacing: .2em;
-}
-.input-box input:valid~span, .input-box input:focus~span {
-    border: none;
-}
-.input-box textarea {
-    border: none;
-    background: var(--color-glass);
-    color: var(--color-white);
-    border-radius: 5px;
-    font-size: 1em;
-    resize: none;
-}
-textarea::placeholder {
-    padding: 10px;
-    font-size: 1rem;
-    color: var(--color-icon-footer);
-}
-.submit-button {
-    background: var(--color-blue);
-    padding: .5rem;
-    border: none;
-    border-radius: 5px;
-    width: 40%;
-    margin: auto 12rem;
-    color: var(--color-white);
-}
 
 /*==========Footer==========*/
 footer {
