@@ -38,7 +38,6 @@
                     <li class="nav__item"><a href="index.html" class="nav__link"><i class="uil uil-estate"></i> Home</a></li>
                     <li class="nav__item"><a href="#sobre" class="nav__link"><i class="uil uil-user-square"></i> Sobre</a></li>
                     <li class="nav__item"><a href="#portfolio" class="nav__link"><i class="uil uil-clipboard-notes"></i> Portfólio</a></li>
-                    <li class="nav__item"><a href="#servicos" class="nav__link"><i class="uil uil-copy"></i> Meus serviços</a></li>
                     <li class="nav__item"><a href="#contato" class="nav__link"><i class="uil uil-envelope-add"></i> Contato</a></li>
                     <li class="nav__item"><a href="#" class="nav__link"><i class="uil uil-file-download-alt"></i> Meu currículo</a></li>
                 </ul>
@@ -228,56 +227,46 @@
             </div>
         </section>
 
-        <!----------Main Serviços---------->
-        <section class="servicos" id="servicos">
-            <div class="servicos__cards">
-                <div class="servicos-text">
-                    <p>SITE EM DESENVOLVIMENTO!
-                    </p>
-                    <p>
-                        Acesso via celular funcionando algumas seções, para os demais dispositivos, ainda em construção.
-                    </p>
-                </div>
-            </div>
-        </section>
-
         <!----------Main Contato---------->
         <section class="contato" id="contato">
-             <div class="contato-box">
+            <div class="contato-box">
 
-                <div class="contato-form">
-                    <div class="contato-text">
-                        <p><i class="uil uil-fast-mail"></i> Este formulário para contato está em desenvolvimento, não está em pleno funcionando!
-                        </p>
-                    </div>
-
-                    <form action="#" method="post">
-                        <div class="form-contact">
-
-                            <div class="form-item">
-                                <input type="text" class="Nname" placeholder="Nome">
-                             </div>
-                            <div class="form-item">
-                                <input type="text" class="Sname" placeholder="Sobrenome">
-                            </div>
-                            <div class="form-item">
-                                <input type="email" class="email" placeholder="Email">
-                            </div>
-                            <div class="form-item">
-                                <input type="number" class="phone" placeholder="Telefone">
-                            </div>
-                            <div class="form-item">
-                                <textarea name="messege" placeholder="Mensagem"></textarea>
-                            </div>
-
-                        </div>
-                                <input type="submit" value="Enviar mensagem" class="submit-btn">
-                    </form>
+                <div class="contato-text">
+                       <p><i class="uil uil-fast-mail"></i> Este formulário para contato está em desenvolvimento, não está em pleno funcionamento!
+                       </p>
                 </div>
 
-             </div>
-        </section>
-        
+               <form action="post">
+                   <div class="input-box">
+                       <input type="text" required="required">
+                       <span><i class="uil uil-user-square"></i> Nome</span>
+                   </div>
+
+                   <div class="input-box">
+                       <input type="text" required="required">
+                       <span><i class="uil uil-user-square"></i> Sobrenome</span>
+                   </div>
+                   
+                   <div class="input-box">
+                       <input type="email" required="required">
+                       <span><i class="uil uil-at"></i> Email</span>
+                   </div>
+
+                   <div class="input-box">
+                       <input type="number" required="required">
+                       <span><i class="uil uil-phone-volume"></i> Telefone</span>
+                   </div>
+
+                   <div class="input-box">
+                    <textarea name="messege" cols="39" rows="5" placeholder="Mensagem"></textarea>
+                   </div>
+                    
+                    <input type="submit" value="Enviar mensagem" class="submit-button">
+               </form>
+                 
+            </div>
+       </section>
+
     </main>
   
     <!----------Footer---------->

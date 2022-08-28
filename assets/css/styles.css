@@ -35,8 +35,6 @@
     --color-box: #1A0E45;
     --color-form-bg: #ecf0f3;
     --color-transparent: rgba(0, 0, 0, 0);
-    --color-gradient: linear-gradient(to left, var(--color-blue), var(--color-logo));
-    --color-shadow-form: inset 8px 8px 8px #ccc9ca, inset -8px -8px 8px #fff;
 
 }
 
@@ -336,7 +334,9 @@ article .article-btn {
     width: 120px;
     height: 35px;
     border-radius: 0px 0px 10px 10px;
-    border: 2px solid var(--color-purple);
+    border-right: 2px solid var(--color-purple);
+    border-left: 2px solid var(--color-purple);
+    border-bottom: 2px solid var(--color-purple);
     box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.4);
     cursor: pointer;
 }
@@ -368,73 +368,78 @@ article .article-btn {
     color: var(--color-font-p);
 }
 
-/*==========Main Serviços==========*/
-.servicos__cards {
-    background: var(--color-glass);
-    border-radius: 10px;
-    padding: 1.8rem;
-}
-.servicos__text p {
-    margin: 0 0 1rem 0;
-    color: var(--color-font-p);
-}
-
 /*==========Main Contato==========*/
 .contato {
-    margin: 3rem auto;
-}
-.contato-box {
-    display: table;
-}
-.contato-form {
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    background: var(--color-form-bg);
+    margin: 2rem auto;
+    padding-bottom: 1rem;
+    border: 1px solid var(--color-glass);
+    box-shadow: 4px 4px var(--color-glass);
 }
 .contato-text {
-    margin: auto;
     text-align: center;
-    font-size: 1rem;
-    padding-top: .5rem;
-}
-.contato-text p {
-    color: var(--color-icon-footer);
+    padding: 1rem 1rem;
+    color: var(--color-font-p);
 }
 .contato-text i {
-    font-size: 1.1rem;
-    color: var(--color-btn);
+    color: var(--color-blue);
+    font-size: 1.2rem;
 }
-.form-contact {
-    display: table;
-    margin: auto;
+.input-box {
+    position: relative;
+    margin: .8rem;
 }
-.form-contact input, .form-contact textarea {
+.input-box input {
+    width: 100%;
+    padding: 10px;
     border: none;
-    background: none;
-    font-size: 1rem;
-    color: var(--color-dark);
-    padding: 1rem;
+    background: var(--color-glass);
+    color: var(--color-white);
+    border-radius: 5px;
+    font-size: 1em;
+    transition:all 0.5s ease;
 }
-.form-contact textarea {
-    height: 100px;
+.input-box span {
+    position: absolute;
+    left: 0;
+    padding: 15px;
+    pointer-events: none;
+    font-size: 1em;
+    color: var(--color-icon-footer);
+    transition:all 0.5s ease;
+}
+.input-box input:valid~span, .input-box input:focus~span {
+    color: var(--color-white);
+    transform: translateX(10px) translateY(-7px);
+    font-size: .8em;
+    padding: 1px 15px;
+    background: var(--color-blue);
+    letter-spacing: .2em;
+}
+.input-box input:valid~span, .input-box input:focus~span {
+    border: none;
+}
+.input-box textarea {
+    border: none;
+    background: var(--color-glass);
+    color: var(--color-white);
+    border-radius: 5px;
+    font-size: 1em;
     resize: none;
 }
-.form-item {
-    padding: 0px 40px;
-    border-radius: 10px;
-    box-shadow: var(--color-shadow-form);
-}
-.submit-btn{
-    width: 80%;
-    height: 40px;
-    border-radius: 10px;
+textarea::placeholder {
+    padding: 10px;
     font-size: 1rem;
-    cursor: pointer;
-    color: var(--color-white);
-    background: var(--color-purple);
-    border: none;
+    color: var(--color-icon-footer);
 }
-
+.submit-button {
+    background: var(--color-blue);
+    padding: .5rem;
+    border: none;
+    border-radius: 5px;
+    width: 40%;
+    margin: auto 12rem;
+    color: var(--color-white);
+}
 
 /*==========Media Query Fomrulário contato==========*/
 @media (max-width: 768px) {
