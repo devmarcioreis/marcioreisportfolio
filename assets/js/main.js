@@ -31,6 +31,16 @@ window.onscroll = () => {
 }
 
 
+
+
+
+
+
+
+
+
+
+
 //Scroll page
 const headerNav = document.querySelectorAll('.nav__menu ul li a[href^="#"]');
 
