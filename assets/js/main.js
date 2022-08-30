@@ -31,12 +31,23 @@ window.onscroll = () => {
 }
 
 
+// Pop-up
+const button = document.querySelector('#popup-btn')
+const popup = document.querySelector('.popup-wrapper')
 
+button.addEventListener('click', () => {
+    popup.style.display = 'block'
+})
 
+popup.addEventListener('click', event => {
+    const classNameOfClickedElement = event.target.classList[0]
+    const classNames = ['popup-close', 'click', 'popup-wrapper']
+    const shouldCloserPopup = classNames.some(className => className === classNameOfClickedElement)
 
-
-
-
+    if(shouldCloserPopup) {
+        popup.style.display = 'none'
+    }
+})
 
 
 
