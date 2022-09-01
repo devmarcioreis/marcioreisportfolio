@@ -282,7 +282,7 @@ h3 {
 }
 .timeline .timeline-item h4 {
     margin-left: .70rem;
-    color: var(--color-dark);
+    color: var(--color-glass);
     font-size: 1rem;
 }
 
@@ -308,17 +308,16 @@ h3 {
 .home .intro .info-text {
     font-size: 1.3rem;
     color: var(--color-blue);
-    margin-bottom: 1.2rem;
 }
 .home .intro p {
     color: var(--color-font-p);
-    margin-bottom: 1rem;
+    margin: 1rem auto;
 }
 .home-conhecimentos {
     display: flex;
     justify-content: center; 
     gap: 2rem;
-    margin-top: 1rem;  
+    margin: 2rem auto;  
     padding-bottom: 1rem;
 }
 .home-conhecimentos i {
@@ -340,7 +339,7 @@ h3 {
     color: var(--color-icon-angular);
 }
 .home-btn {
-    margin: 1rem 0;
+    margin: 3rem auto;
 }
 
 /*==========Scrol Down==========*/
@@ -473,6 +472,7 @@ h3 {
     text-align: center;
     transform: translateY(0);
     transition: 0.3s;
+    margin-bottom: .5rem;
 }
 .services .service-item .service-item-inner:hover {
     transform: translateY(-0.625rem);
@@ -495,9 +495,11 @@ h3 {
 }
 .portfolio-text p {
     color: var(--color-font-p);
+    margin: 1rem auto 1.5rem auto;
 }
 .portfolio__slider {
     text-align: center;
+    margin-bottom: 3rem;
 }
 .portfolio-box {
     position: relative;
@@ -565,7 +567,6 @@ h3 {
 .contact-box {
     width: 100%;
     text-align: center;
-    margin-bottom: 1rem;
 }
 .contact-description {
     margin: .2rem;
@@ -641,6 +642,7 @@ h3 {
     text-align: center;
     background: var(--color-3);
     margin-left: 4rem;
+    margin-bottom: 1rem;
 }
 
 /*==========Footer==========*/
