@@ -397,16 +397,14 @@ h3 {
 .rounded {
     padding: var(--card-padding);
 }
-.about-content {
-    text-align: center;
-}
 .about-text p {
     text-align: left;
     margin-bottom: var(--m-1);
     color: var(--color-white);
 }
 .about .skills {
-    margin: 2rem 0 2rem 0;
+    width: 100%;
+    margin: 2rem auto;
 }
 .about-content .skills .skill-item {
     flex: 0 0 100%;
@@ -466,11 +464,11 @@ h3 {
     display: flex;
     flex-direction: column;
     gap: .5rem;
+    margin: auto;
 }
-.services .service-item .service-item-inner{
+.services .service-item .service-item-inner {
     padding: 1.2rem;
     text-align: center;
-    transform: translateY(0);
     transition: 0.3s;
     margin-bottom: .5rem;
 }
@@ -626,11 +624,12 @@ h3 {
     color: var(--color-3);
 }
 .contact-btn {
+    display: flex;
     border-radius: 10px;
-    text-align: center;
     background: var(--color-3);
-    margin-left: 4rem;
+    margin: auto;
     margin-bottom: 1rem;
+    width: 18%;
 }
 
 /*==========Footer==========*/
