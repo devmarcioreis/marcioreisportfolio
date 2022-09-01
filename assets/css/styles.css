@@ -564,21 +564,9 @@ h3 {
 }
 
 /*==========Contato==========*/
-.contact-box {
-    width: 100%;
-    text-align: center;
-}
-.contact-description {
-    margin: .2rem;
-}
-.contact-description {
-    display: inline-block;
-    align-items: center;
-    color: var(--color-blue);
-    font-size: 1.1rem;
-}
 .contact-form {
     width: 92vw;
+    margin-top: 2rem;
 }
 .contact-inputs {
     display: grid;
