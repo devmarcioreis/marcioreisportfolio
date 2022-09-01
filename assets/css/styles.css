@@ -624,12 +624,9 @@ h3 {
     color: var(--color-3);
 }
 .contact-btn {
-    display: flex;
-    border-radius: 10px;
-    background: var(--color-3);
-    margin: auto;
-    margin-bottom: 1rem;
-    width: 18%;
+    margin-left: 1rem;
+    text-align: center;
+    width: 40%;
 }
 
 /*==========Footer==========*/
