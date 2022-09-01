@@ -585,7 +585,7 @@ h3 {
     content: '';
     height: 2px;
     width: 0;
-    background: var(--color-3);
+    background: var(--color-blue);
     transition: .5s;
 }
 .contact-input:focus ~ span {
@@ -621,12 +621,13 @@ h3 {
     top: -.75rem;
     left: 0;
     z-index: 10;
-    color: var(--color-3);
+    color: var(--color-blue);
 }
 .contact-btn {
     margin-left: 1rem;
     text-align: center;
     width: 40%;
+    background: var(--color-blue);
 }
 
 /*==========Footer==========*/
