@@ -16,25 +16,19 @@
     --font-logo: 'Nunito';
     --font-text: 'Rubik';
     --color-primary: #DD2651;
-
-    --color-font-footer: #ccc;
-    --color-1: #080451;
+    --color-1: #7828FF;
     --color-2: #09011c;
-    --color-3: rgb(108, 108, 229);
-    --color-background: #161a2e;
     --color-glass: rgba(255, 255, 255, 0.051);
     --color-white: #fff;
     --color-dark: #000;
     --color-green: #2B7A0B;
     --color-purple: #7728ff;
-    --color-hover-bg: rgba(255, 255, 255, 0.137);
     --color-icon-html: #E44D25;
     --color-icon-css: #1E4CE5;
     --color-icon-js: #F7E018;
     --color-icon-react: #00D8FF;
     --color-icon-angular: #D6002F;
     --color-icon-footer: #444B55;
-    --color-btn: #7828FF;
     --color-blue: #3e7beb;
     --color-transparent: rgba(0, 0, 0, 0);
     --color-facebook: #38548F;
@@ -47,25 +41,8 @@
     --color-border: rgba(255, 255, 255, 0.137);
     --color-shadow-social: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px var(--color-blue);
     --color-border-social: 1px solid rgba(0, 0, 0, 0);
-    --color-gradient: linear-gradient(to top left, var(--color-1), var(--color-2));
-
-    --h1-font-size: 2.25rem;
-    --h2-font-size: 1.75rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: .938rem;
-    --small-font-size: .875rem;
-    --font-medium: 400;
     --font-semi-bold: 600;
     --font-logo-bolder: 900;
-
-    --m-0-5: .5rem;
-    --m-0-75: .75rem;
-    --m-1: 1rem;
-    --m-1-5: 1.5rem;
-    --m-2: 2rem;
-    --m-2-5: 2.5rem;
-
-    --card-padding:1.9rem 0.95rem;
     --border-radius: 1.25rem;
     --box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
 
@@ -142,6 +119,8 @@ p, span, small {
     top: 0;
     left: 0;
     z-index: 1;
+    background-color: var(--color-glass);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.363);
 }
 
 /*==========Navbar==========*/
@@ -239,7 +218,7 @@ p, span, small {
     width: 1px;
     position: absolute;
     height: 100%;
-    left: var(--m-0-5);
+    left: .5rem;
     background: var(--color-glass);
     top: 0;
 }
@@ -356,7 +335,7 @@ p, span, small {
 .mouse i {
     color: var(--color-white);
     position: absolute;
-    top: var(--m-0-5);
+    top: .5rem;
     left: 7%;
     display: block;
     animation: ani-mouse 2s linear infinite;
@@ -364,10 +343,10 @@ p, span, small {
 
 /*==========Sobre==========*/
 .rounded {
-    padding: var(--card-padding);
+    padding: 1.9rem 0.95rem;
 }
 .about-text p {
-    margin-bottom: var(--m-1);
+    margin-bottom: 1rem;
 }
 .about .skills {
     width: 100%;
@@ -390,7 +369,7 @@ p, span, small {
     position: relative;
 }
 .about-content .skills .skill-item:not(:last-child) {
-    margin-bottom: var(--m-1-5);
+    margin-bottom: 1.5rem;
 }
 .about-content .skills .skill-item .progress .progress-in {
     position: absolute;
@@ -520,13 +499,16 @@ p, span, small {
 }
 
 /*==========Contato==========*/
+.contact-box {
+    display: none;
+}
 .contact-form {
     margin-top: 2rem;
 }
 .contact-inputs {
     display: grid;
     row-gap: 2rem;
-    margin-bottom: var(--m-2-5);
+    margin-bottom: 2.5rem;
     margin-left: .5rem;
     color: var(--color-transparent);
 }
@@ -589,7 +571,8 @@ p, span, small {
 /*==========Footer==========*/
 footer {
     padding: 1rem 0;
-    border-top: 1px solid var(--color-2);
+    background-color: var(--color-glass);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.363);
 }
 .footer__cards {
     display: flex;
@@ -612,7 +595,7 @@ footer {
 }
 .footer__card a {
     font-family: var(--font-logo);
-    font-weight: 900;
+    font-weight: var(--font-logo-bolder);
     color: var(--color-white);
     font-size: 1.1rem;
     cursor: pointer;
@@ -708,7 +691,7 @@ footer {
 /*==========Media Query==========*/
 @media (min-width: 768px) {
     .header {
-        box-shadow: 0 0 10px var(--color-border);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.363);
     }
     .nav__toggle {
         display: none;
@@ -732,7 +715,7 @@ footer {
 
     /*==========Home==========*/
     .home {
-        padding-top: 5rem;
+        padding-top: 2rem;
         padding-bottom: 5rem;
     }
     .home .intro{
@@ -744,27 +727,26 @@ footer {
         margin: auto;
     }
     .home .intro .left {
-        width: 65%;
+        width: 70%;
     }
     .home .intro h1 {
         font-size: 1rem;
     }
     .home .intro h1 span {
-        font-size: 2.7rem;
+        font-size: 3.4rem;
         line-height: 3rem;
     }
-    .home .intro h3{
-        font-size: 1.2rem;
+    .home .intro .home-text {
+        font-size: 1.5rem;
     }
     .home .intro p {
         font-size: 1rem;
     }
     .home-conhecimentos i {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
     .home-btn {
         text-align: center;
-        margin-top: 2rem;
     }
     .home .intro .right img {
         display: block;
@@ -785,11 +767,120 @@ footer {
         transition: .5s ease;
     }
     .scroll-down {
-        margin: auto;
         padding-bottom: 5rem;
     }
 
-    
+    /*==========Sobre==========*/
+    .about-content {
+        flex: 0 0 75%;
+        margin-bottom: 6rem;
+    }
+    .about .rounded {
+        display: flex;
+        align-items: baseline;
+        padding-top: 7rem;
+    }
+    .about-text {
+        width: 60%;
+    }
+    .about-text p {
+        font-size: 1.1rem;
+    }
+    .skills {
+        background: var(--color-white);
+        padding: 3rem;
+        border-radius: var(--border-radius);
+        box-shadow: var(--box-shadow);
+    }
+    .about-content .skills .skill-item .progress {
+        background: var(--color-dark);
+    }
+    .skill-percent  {
+        background: var(--color-dark);
+    }
+
+    /*==========Meus serviços==========*/
+    .services {
+        margin-bottom: 10rem;
+    }
+    .service-item {
+        display: flex;
+        align-items: baseline;
+        gap: 2rem;
+        padding-top: 7rem;
+    }
+    .service-item-inner {
+        border-radius: var(--border-radius);
+        padding: 2rem;
+        width: 20rem;
+        height: 22rem;
+        margin: auto;
+        transform: translateY(0);
+        transition: 0.3s;
+    }
+    .service-item-inner:hover {
+        transform: translateY(-0.625rem);
+    }
+    .bg-1 {
+        background: var(--color-icon-js);
+    }
+    .bg-2 {
+        background: var(--color-icon-react);
+    }
+    .bg-3 {
+        background: var(--color-icon-angular);
+    }
+    .js1, .react1, .angular1 {
+        color: var(--color-dark);
+    }
+
+    /*==========Portfólio==========*/
+    .portfolio-text {
+        margin: 1.5rem auto;
+    }
+    .portfolio-text p {
+        font-size: 1rem;
+    }
+    .porfolio-info {
+        margin-bottom: 5rem;
+    }
+
+    /*==========Contato==========*/
+    .contact {
+        display: flex;
+        width: 85%;
+        margin: auto;
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+        background: var(--color-white);
+        border-radius: var(--border-radius);
+        padding: 2rem;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.493);
+    }
+    .contact-box {
+        display: block;
+        margin-top: 2rem;
+        margin-left: 2rem;
+        flex: 0 0 20%;
+    }
+    .contact-form {
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
+
+    /*==========Footer==========*/
+    footer {
+        background-color: var(--color-glass);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.363);
+        border: none;
+    }
+    .footer__cards {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-around;
+    }
+
 
 }
 
