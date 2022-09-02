@@ -240,7 +240,7 @@ p, span, small {
     position: absolute;
     height: 100%;
     left: var(--m-0-5);
-    background: var(--color-glass);
+    background: var(--color-white);
     top: 0;
 }
 .timeline .timeline-icon {
