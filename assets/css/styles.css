@@ -321,7 +321,7 @@ p, span, small {
 .scroll-down {
     left: 0;
     width: 100%;
-    margin: 1.5rem auto;
+    margin: 1rem auto;
 }
 .nouse-wrapper {
     font-size: var(--small-font-size);
@@ -437,7 +437,7 @@ p, span, small {
 }
 .service-item p {
     text-align: left;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 /*==========Portfólio==========*/
@@ -447,7 +447,7 @@ p, span, small {
     margin: .5rem .5rem;
 }
 .portfolio-text p {
-    margin: .5rem auto 1rem auto;
+    margin: .3rem auto .3rem auto;
 }
 .portfolio__slider {
     text-align: center;
