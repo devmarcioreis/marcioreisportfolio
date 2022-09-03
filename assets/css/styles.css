@@ -39,10 +39,10 @@
     --color-github: #000000;
     --color-whatsapp: #2BAF3E;
     --color-border: rgba(255, 255, 255, 0.137);
-    --color-shadow-social: inset 10px 10px 1px rgba(0, 0, 0, 0.05), 
-    15px 25px 10px rgba(0, 0, 0, 0.05), 
-    15px 20px 20px rgba(0,  0, 0, 0.05), 
-    inset -10px -10px 15px rgba(255, 255, 255, 0.9);
+    --color-shadow-social: inset 10px 10px 1px rgba(248, 248, 248, 0.205), 
+    5px 10px 20px rgba(0, 0, 0, 0.123), 
+    5px 2px 1px rgba(255, 249, 249, 0.05), 
+    inset -10px -10px 15px rgba(255, 255, 255, 0.158);
     --color-border-social: 1px solid rgba(0, 0, 0, 0);
     --font-semi-bold: 600;
     --font-logo-bolder: 900;
