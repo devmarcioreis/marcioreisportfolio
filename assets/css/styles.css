@@ -443,7 +443,7 @@ p, span, small {
 
 /*==========Sobre==========*/
 .rounded {
-    padding: 1.9rem 0.95rem;
+    padding: 1rem 0.95rem;
 }
 .about-text p {
     margin-bottom: 1rem;
@@ -517,6 +517,7 @@ p, span, small {
 }
 .service-item p {
     margin: 1rem auto;
+    color: var(--color-white);
 }
 .service-item-inner {
     border-radius: var(--border-radius);
@@ -524,17 +525,12 @@ p, span, small {
     margin-left: .5rem;
 }
 .js1, .react1, .angular1 {
-    color: var(--color-dark);
+    color: var(--color-white);
 }
-.bg-1 {
-    background: var(--color-icon-js);
+.bg-1, .bg-2, .bg-3  {
+    background: var(--color-1);
 }
-.bg-2 {
-    background: var(--color-icon-react);
-}
-.bg-3 {
-    background: var(--color-icon-angular);
-}
+
 
 /*==========Portfólio==========*/
 .portfolio__container {
