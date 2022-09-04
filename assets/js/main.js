@@ -32,10 +32,15 @@ window.onscroll = () => {
 
 
 // Pop-up
-const button = document.querySelector('#popup-btn')
+const button = document.querySelector('#popup-mobile')
+const buttonDesktop = document.querySelector('#popup-desktop')
 const popup = document.querySelector('.popup-wrapper')
 
 button.addEventListener('click', () => {
+    popup.style.display = 'block'
+})
+
+buttonDesktop.addEventListener('click', () => {
     popup.style.display = 'block'
 })
 
