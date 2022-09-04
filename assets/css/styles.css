@@ -443,7 +443,7 @@ p, span, small {
 
 /*==========Sobre==========*/
 .rounded {
-    padding: 1rem 0.95rem;
+    padding: .5rem 0.95rem;
 }
 .about-text p {
     margin-bottom: 1rem;
