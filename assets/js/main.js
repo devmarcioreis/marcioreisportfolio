@@ -1,25 +1,22 @@
-//Menu
-const openMenu = (toggleId, navId) => {
-    const toggle = document.getElementById(toggleId);
-    nav = document.getElementById(navId);
+//Navbar
+const nav = document.querySelector('.nav__links');
+const openNavBtn = document.querySelector('#nav__toggle-open');
+const closeNavBtn = document.querySelector('#nav__toggle-close');
 
-    if(toggle && nav) {
-        toggle.addEventListener('click', () => {
-            nav.classList.toggle('show');
-        })
-    } 
+const openNav = () => {
+    nav.style.display = 'flex';
+    openNavBtn.style.display = 'none';
+    closeNavBtn.style.display = 'inline-block';
 };
-openMenu('nav-toggle', 'nav-menu')
+openNavBtn.addEventListener('click', openNav);
 
 
-
-const navLink = document.querySelectorAll('.nav__link');
-navMenu = document.getElementById('nav-menu');
-
-function linkAction() {
-    navMenu.classList.remove('show');
+const closeNav = () => {
+    nav.style.display = 'none';
+    openNavBtn.style.display = 'inline-block';
+    closeNavBtn.style.display = 'none';
 }
-navLink.forEach(headerNav => headerNav.addEventListener('click', linkAction));
+closeNavBtn.addEventListener('click', closeNav);
 
 
 //Navbar color
@@ -30,66 +27,17 @@ window.onscroll = () => {
     else nav.classList.remove('scroll-header');
 }
 
+//Popup
+let popup = document.getElementById('popup')
+let openBtn = document.querySelector('#openPopup')
+let closeBtn = document.querySelector('#closePopup')
 
-// Pop-up
-const button = document.querySelector('#popup-mobile')
-const buttonDesktop = document.querySelector('#popup-desktop')
-const popup = document.querySelector('.popup-wrapper')
 
-button.addEventListener('click', () => {
-    popup.style.display = 'block'
+openBtn.addEventListener('click', () => {
+    popup.classList.add('open-popup')
+}) 
+
+closeBtn.addEventListener('click', () => {
+    popup.classList.remove('open-popup')
 })
-
-buttonDesktop.addEventListener('click', () => {
-    popup.style.display = 'block'
-})
-
-popup.addEventListener('click', event => {
-    const classNameOfClickedElement = event.target.classList[0]
-    const classNames = ['popup-close', 'click', 'popup-wrapper']
-    const shouldCloserPopup = classNames.some(className => className === classNameOfClickedElement)
-
-    if(shouldCloserPopup) {
-        popup.style.display = 'none'
-    }
-})
-
-
-
-
-//Scroll page
-const headerNav = document.querySelectorAll('.nav__menu ul li a[href^="#"]');
-
-headerNav.forEach(item => {
-    item.addEventListener('click', scrollOnClick);
-});
-
-function scrollOnClick(event) {
-    event.preventDefault();
-    const to = scrollToHref(event.target) -60;
-
-    scrollToPosition(to);
-};
-
-function scrollToPosition(to) {
-    window.scroll({
-        top: to,
-        behavior: "smooth",
-    });
-};
-
-function scrollToHref(element) {
-    const id = element.getAttribute('href');
-    return document.querySelector(id).offsetTop;
-};
-
-
-
-
-
-
-
-
-
-
 

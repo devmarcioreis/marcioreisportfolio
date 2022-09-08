@@ -4,409 +4,315 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!----------Autor---------->
+    <!--========Autor========-->
     <meta name="author" contente="Marcio Reis">
     <meta name="description" contente="Portfólio do desenvolvedor front-end Marcio Reis">
     <meta name="keywords" contente="Portfolio, html, css, front-end, JavaScript, Desenvolvimento, React, React Native, Angular, NodeJS, Vue, Android, IOS, HTTP, SEO, Scrum, Bootstrap, Git, GitHub, Tailwind, Regex, QA, Php, TypeScript">
-    <!----------Icon---------->
+    <!--========Icon========-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <!----------CSS---------->
-    <link rel="stylesheet" href="assets/css/normalize.css">
+    <!--========Swiper========-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <!--========CSS========-->
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/lightslider.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <!----------Favicon---------->
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!--========Favicon========-->
+    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
     <title>M:)REISS | Portfólio Marcio Reis</title>
 </head>
 
-
 <body>
 
-    <!----------Header---------->
-    <header class="header" id="header">
-        <nav class="nav">
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="uil uil-bars"></i>
-            </div>
-            <div class="nav__logo">
-                <a href="index.html">M<span>:)</span>REISS</a>
-            </div>
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link" ><i class="uil uil-estate"></i> Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link"><i class="uil uil-user-square"></i> Sobre</a></li>
-                    <li class="nav__item"><a href="#servicos" class="nav__link"><i class="uil uil-edit"></i> Serviços</a></li>
-                    <li class="nav__item"><a href="#portfolio" class="nav__link"><i class="uil uil-clipboard-notes"></i> Portfólio</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link"><i class="uil uil-envelope-add"></i> Contato</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link"><i class="uil uil-file-download-alt"></i> Currículo</a></li>
+    <header >
+        <!--========Navbar========-->
+        <nav class="nav" id="header">
+            <div class="nav__container">
+                <a href="index.html" class="nav__logo">M<span>:)</span>REISS</a>
+                <ul class="nav__links">
+                    <li><a href="#home" class="active"><i class="uil uil-estate"></i> Home</a></li>
+                    <li><a href="#about"><i class="uil uil-user"></i> Sobre</a></li>
+                    <li><a href="#services"><i class="uil uil-constructor"></i> Serviços</a></li>
+                    <li><a href="#portfolio"><i class="uil uil-bag"></i> Portfólio</a></li>
+                    <li><a href="#contact"><i class="uil uil-comment-alt-edit"></i> Contato</a></li>
                 </ul>
-                <div class="nav-social">
-                    <a href="https://www.linkedin.com/in/m%C3%A1rcio-reis-716b649b/" target="_blank"><i class="uil uil-linkedin"></i></a>
-                    <a href="https://github.com/devmarcioreis" target="_blank"><i class="uil uil-github"></i></a>
-                    <a href="https://twitter.com/" target="_blank"><i class="uil uil-twitter"></i></a>
-                    <a href="https://www.instagram.com/" target="_blank"><i class="uil uil-instagram-alt"></i></a>
-                    <a href="https://www.facebook.com/" target="_blank"><i class="uil uil-facebook"></i></a>
-                </div>
+                <button class="nav__toggle-btn" id="nav__toggle-open"><i class="uil uil-bars"></i></button>
+                <button class="nav__toggle-btn" id="nav__toggle-close"><i class="uil uil-multiply"></i></button>
             </div>
         </nav>
     </header>
 
-    <!----------Main---------->
+    <!--========Main========-->
     <main>
-        <div class="main__container">
+        <div class="main__content">
 
-            <!----------Home---------->
-            <div class="timeline" id="services">
-                <div class="timeline-item">
-                    <i class="uil uil-user-circle timeline-icon"></i>
+            <!--========Home========-->
+            <section class="home" id="home">
+                <div class="home__container">
+                    <div class="home__box">
+                        <aside class="home-left">
+                            <h1>Oi, eu sou <br><span>Marcio Reis</span></h1>
+                            <h2>Desenvolvedor Front-end</h2>
+            
+                            <p>Tenho paixão por tecnologia, e ela me faz ter vontade de trabalhar e estudar cada vez mais para solucionar os mais variados tipos de problemas na área de desenvolvimento.</p>
+                            <p>Seguir este caminho tem sido desafiador e me faz querer sempre o melhor para meus clientes, sempre dar uma solução inovadora para seus problemas e suas necessidades é o que me motiva, além de aprender, claro!</p>
+                            <p>Estou sempre estudando e aprendendo, e no momento estudo e trabalho com: HTML5, CSS3, JavaScript, React e Angular.</p>
 
-                    <section class="home">
-                        <div class="home__container">
-                            <div class="left">
-                                <h1>Oi, eu sou <br><span>Marcio Reis</span></h1>
-                                <h3>Desenvolvedor Front-end</h3>
-                                <p>Tenho paixão por tecnologia, e ela me faz ter vontade de trabalhar e estudar cada vez mais para solucionar os mais variados tipos de problemas na área de desenvolvimento.</p>
-                                <p>Seguir este caminho tem sido desafiador e me faz querer sempre o melhor para meus clientes, sempre dar uma solução inovadora para seus problemas e suas necessidades é o que me motiva, além de aprender, claro!</p>
-                                <p>Estou sempre estudando e aprendendo, e no momento estudo e trabalho com: HTML5, CSS3, JavaScript, React e Angular.</p>
-                                <div class="btn-static" id="popup-desktop">
-                                    <a href="#" class="btn-default"><i class="uil uil-comment-alt-edit"></i> Fale comigo</a>
-                                </div>
+                            <div class="language">
+                                <i class="uil uil-html5 html"></i> <i class="uil uil-css3-simple css"></i> <i class="uil uil-java-script js"></i> <i class="uil uil-react react"></i> <i class="uil uil-letter-english-a angular"></i>
                             </div>
-                            <div class="right">
-                                <div class="home-images">
-                                    <img src="assets/images/css3.ico" class="moove1">
-                                    <img src="assets/images/react.png" class="moove2">
-                                    <img src="assets/images/html.png" class="moove3">
-                                    <img src="assets/images/js.png" class="moove4">
-                                    <img src="assets/images/angular.png" class="moove5">
-                                </div>
-                                <div class="shape-big"></div>  
-                                <img src="assets/images/lampada.png" alt="Imagem lâmpada" 
-                                class="right-static">                     
-                                <div class="home-btn" id="popup-mobile">
-                                    <a href="#" class="btn btn-default"><i class="uil uil-comment-alt-edit"></i> Fale comigo</a>
-                                </div>
+
+                            <div class="home-btn" id="openPopup">
+                                <button class="btn btn-default"><i class="uil uil-comment"></i> Fale comigo</button>
                             </div>
-                            <div class="home-social">
-                                <a href="#"><i class="uil uil-linkedin"></i></a>
-                                <a href="#"><i class="uil uil-github"></i></a>
-                                <a href="#"><i class="uil uil-twitter"></i></a>
-                                <a href="#"><i class="uil uil-instagram-alt"></i></a>
-                                <a href="#"><i class="uil uil-facebook"></i></a>
-                            </div>                         
-                        </div>
+                        </aside>
 
-                        <!----------Scroll Down---------->
-                        <div class="scroll-down">
-                            <a href="#about" class="nouse-wrapper">
-                                <span class="mouse">
-                                    <i class="uil uil-angle-down"></i>
-                                </span>
-                            </a>
+                        <div class="home-right">
+                            <img src="assets/images/profile.png" alt="Lâmpada">
                         </div>
-                    </section>
-                </div>
-            </div>
-
-            <!----------Sobre---------->
-            <div class="timeline" id="about">
-                <div class="timeline-item">
-                    <i class="uil uil-info-circle timeline-icon"></i>
-                        <h4>Sobre</h4>
                         
-                    <section class="about">
-                         <div class="about-content">
-                            <div class="rounded">
-                                <div class="about-text">
-                                     <p>Estudo análise e desenvolvimento de sistemas e também estudando e me aperfeiçoando em React e Angular.</p>
-                                     <p>No momento trabalho como desenvolvedor Front-end freelancer.</p>
-                                     <p>Sempre estudando, aprendendo novas tecnologias, me preparando para o futuro na área que gosto, e sempre correspondendo com a expectativa e necessidade de meus clientes e amigos.</p>
-                                </div>
-                                 <div class="skills">
-                                     <div class="skill-item">
-                                         <h4>HTML</h4>
-                                         <div class="progress">
-                                             <div class="progress-in style-html">
-                                                 <div class="skill-percent">89%</div>
-                                             </div>
-                                         </div>
-                                     </div>
-                                     <div class="skill-item">
-                                         <h4>CSS</h4>
-                                         <div class="progress">
-                                             <div class="progress-in style-css">
-                                                 <div class="skill-percent">81%</div>
-                                             </div>
-                                         </div>
-                                     </div>
-                                     <div class="skill-item">
-                                         <h4>JavaScript</h4>
-                                         <div class="progress">
-                                             <div class="progress-in style-js">
-                                                 <div class="skill-percent">65%</div>
-                                             </div>
-                                         </div>
-                                     </div>
-                                     <div class="skill-item">
-                                         <h4>React</h4>
-                                         <div class="progress">
-                                             <div class="progress-in style-react">
-                                                 <div class="skill-percent">20%</div>
-                                             </div>
-                                         </div>
-                                     </div>
-                                     <div class="skill-item">
-                                         <h4>Angular</h4>
-                                         <div class="progress">
-                                             <div class="progress-in style-angular">
-                                                 <div class="skill-percent">12%</div>
-                                             </div>
-                                         </div>
-                                     </div>
-                                 </div>
-                            </div>
+                        <div class="home-social">
+                            <a href="https://www.linkedin.com/in/m%C3%A1rcio-reis-716b649b/" target="_blank"><i class="uil uil-linkedin"></i></a>
+                            <a href="https://github.com/devmarcioreis" target="_blank"><i class="uil uil-github"></i></a>
+                            <a href="https://twitter.com/" target="_blank"><i class="uil uil-twitter"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i class="uil uil-instagram-alt"></i></a>
+                            <a href="https://www.facebook.com/" target="_blank"><i class="uil uil-facebook"></i></a>
                         </div>
-                    </section>
+            
+                    </div>
                 </div>
+            </section>
+
+            <!--========Scroll Down========-->
+            <div class="scroll-down">
+                <a href="#about" class="nouse-wrapper">
+                <span class="mouse">
+                    <i class="uil uil-angle-down"></i>
+                </span>
+                </a>
             </div>
 
-            <!----------Meus serviços---------->
-            <div class="timeline" id="servicos">
-                <div class="timeline-item">
-                    <i class="uil uil-edit timeline-icon"></i>
-                    <h4>Serviços</h4>   
-                    <section class="services">
-                        <div class="service-item">
-                            <div class="service-item-inner bg-1">
-                                <i class="uil uil-java-script js js1"></i>
+            <!--========About========-->
+            <section class="about" id="about">
+                <div class="about__container">
+                    <div class="about__box">
+                        <article class="about-text">
+                            <h2>Sobre mim</h2>
+                            <p>Estudo análise e desenvolvimento de sistemas e também estudando e me aperfeiçoando em React e Angular.</p>
+                            <p>No momento trabalho como desenvolvedor Front-end freelancer.</p>
+                            <p>Sempre estudando, aprendendo novas tecnologias, me preparando para o futuro na área que gosto, e sempre correspondendo com a expectativa e necessidade de meus clientes e amigos.</p>
+                        </article>
+                        <div class="skills">
+                            <div class="skill-item">
+                                <h4>HTML</h4>
+                                <div class="progress">
+                                    <div class="progress-in style-html">
+                                        <div class="skill-percent">89%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <h4>CSS</h4>
+                                <div class="progress">
+                                    <div class="progress-in style-css">
+                                        <div class="skill-percent">81%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <h4>JavaScript</h4>
+                                <div class="progress">
+                                    <div class="progress-in style-js">
+                                        <div class="skill-percent">65%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <h4>React</h4>
+                                <div class="progress">
+                                    <div class="progress-in style-react">
+                                        <div class="skill-percent">20%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <h4>Angular</h4>
+                                <div class="progress">
+                                    <div class="progress-in style-angular">
+                                        <div class="skill-percent">12%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--========Services========-->
+            <section class="services" id="services">
+                <div class="services__container">
+                    <div class="services-description">
+                        <h2>Meus serviços</h2>
+                        <p>No momento estou me dedicando para o aperfeiçoamento de meus conhecimentos em:</p>
+                    </div>
+                    <div class="services-cards">
+                        <div class="card">
+                            <div class="card-item">
+                                <i class="uil uil-java-script js-icon"></i>
+                                <h3 class="lang">JavaScript</h3>
                                 <p>Hoje praticamente utilizo o JavaScript em todos os projetos que desenvolvo.</p>
                                 <p>Estou em processo de fluência na linguagem, cada dia estudando mais e me aprimorando em sua utilização de modo prático para o dia a dia.</p>
+                                <a href="https://github.com/devmarcioreis" target="_blank" class="btn btn-default services-btn"><i class="uil uil-github github-icon"></i> Projetos</a>
                             </div>
-                            <div class="service-item-inner bg-2">
-                                <i class="uil uil-react react react1"></i>
-                                <p>Estou em meus primeiros passos em React, mas muito feliz em aprender e desenvolver utilizando a mesma. Apenas iniciei meus estudos e hoje sei mais do que ontem sabia sobre ela, e estou gostando bastante.</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-item middle">
+                                <i class="uil uil-react react-icon"></i>
+                                <h3 class="lang">React</h3>
+                                <p>Estou em meus primeiros passos em React, mas muito feliz em aprender e desenvolver utilizando a mesma. <br>Apenas iniciei meus estudos e hoje sei mais do que ontem sabia sobre ela, e estou gostando bastante.</p>
+                                <a href="https://github.com/devmarcioreis" target="_blank" class="btn btn-default services-btn"><i class="uil uil-github github-icon"></i> Projetos</a>
                             </div>
-                            <div class="service-item-inner bg-3">
-                                <i class="uil uil-letter-english-a angular angular1"></i>
+                        </div>
+                        <div class="card">
+                            <div class="card-item">
+                                <i class="uil uil-letter-english-a angular-icon"></i>
+                                <h3 class="lang">Angular</h3>
                                 <p>Cada vez mais me esforço para aprender sobre Angular, sua aplicação prática no dia a dia das empresas e pessoas, iniciei há pouco tempo, mas estarei com toda certeza trabalhando com a mesma em pouco tempo.</p>
+                                <a href="https://github.com/devmarcioreis" target="_blank" class="btn btn-default services-btn"><i class="uil uil-github github-icon"></i> Projetos</a>
                             </div>
                         </div>
-                    </section>
+                    </div>
                 </div>
-            </div>
+            </section>
 
-            <!----------Portfólio---------->
-            <div class="timeline" id="portfolio">
-                <div class="timeline-item">
-                    <i class="uil uil-bag timeline-icon"></i>
-                    <h4>Portfólio</h4>  
-                    <section class="portfolio">
-                        <div class="portfolio__container">
-                            <div class="portfolio-text">
-                                 <p>Veja alguns dos projetos que desenvolvi, seja para clientes, acadêmicos, pessoais ou para aprendizado. <br>Clique no botão vermelho para ver.</p>
-                            </div> 
-                            <div class="portfolio__slider">
-                                <ul id="slider">
-                                    <li>
-                                        <div class="portfolio-box">
-                                            <div class="box-img">
-                                                <div class="box-title">
-                                                    <a href="https://devmarcioreis.github.io/academico-musical/" target="_blank">
-                                                    <i class="uil uil-mouse-alt-2"></i> Reviews</a>
-                                                </div>
-                                                    <img src="assets/images/slider/musica.jpg">
-                                            </div>
-                                            <div class="card-text">
-                                                <strong>Projeto Musical</strong>
-                                                <p>Projeto desenvolvido para fins acadêmicos.</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="portfolio-box">
-                                            <div class="box-img">
-                                                <div class="box-title">
-                                                    <a href="https://devmarcioreis.github.io/menu-lateral/" target="_blank">
-                                                    <i class="uil uil-mouse-alt-2"></i> Reviews</a>
-                                                    </div>
-                                                <img src="assets/images/slider/menu.jpg">
-                                            </div>
-                                            <div class="card-text">
-                                                <strong>Menu lateral</strong>
-                                                <p>Menu em HTML, CSS e Javascript, muito legal.</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="portfolio-box">
-                                            <div class="box-img">
-                                                <div class="box-title">
-                                                    <a href="https://devmarcioreis.github.io/barra-progresso/" target="_blank">
-                                                    <i class="uil uil-mouse-alt-2"></i> Reviews</a>
-                                                    </div>
-                                                <img src="assets/images/slider/bars.jpg">
-                                            </div>
-                                            <div class="card-text">
-                                                <strong>Habilidades</strong>
-                                                <p>Skill bars desenvolvido em JavaScript.</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="portfolio-box">
-                                            <div class="box-img">
-                                                <div class="box-title">
-                                                    <a href="https://devmarcioreis.github.io/box-cores/" target="_blank">
-                                                    <i class="uil uil-mouse-alt-2"></i> Reviews</a>
-                                                </div>
-                                                    <img src="assets/images/slider/colors.jpg">
-                                            </div>
-                                            <div class="card-text">
-                                                <strong>Cores em movimento</strong>
-                                                <p>Card desenvolvido com HTML e CSS.</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="portfolio-box">
-                                            <div class="box-img">
-                                                <div class="box-title">
-                                                    <a href="https://devmarcioreis.github.io/calculadora-html-css/" target="_blank">
-                                                    <i class="uil uil-mouse-alt-2"></i> Reviews</a>
-                                                </div>
-                                                    <img src="assets/images/slider/calculadora.jpg">
-                                            </div>
-                                            <div class="card-text">
-                                                <strong>Calculadora funcional</strong>
-                                                <p>Calculadora funcionando e bem legal, faça suas contas.</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="portfolio-box">
-                                            <div class="box-img">
-                                                <div class="box-title">
-                                                    <a href="https://devmarcioreis.github.io/card-vidro/" target="_blank">
-                                                    <i class="uil uil-mouse-alt-2"></i> Reviews</a>
-                                                </div>
-                                                    <img src="assets/images/slider/dog.jpg">
-                                            </div>
-                                            <div class="card-text">
-                                                <strong>Card de vidro</strong>
-                                                <p>Não esqueça de seguir o cachorrinho em suas redes.</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="portfolio-box">
-                                            <div class="box-img">
-                                                <div class="box-title">
-                                                    <a href="https://devmarcioreis.github.io/input-box/" target="_blank">
-                                                    <i class="uil uil-mouse-alt-2"></i> Reviews</a>
-                                                </div>
-                                                    <img src="assets/images/slider/input.jpg">
-                                            </div>
-                                            <div class="card-text">
-                                                <strong>Input CSS</strong>
-                                                <p>Teste esse input desenvolvido em CSS.</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="portfolio-box">
-                                            <div class="box-img">
-                                                <div class="box-title">
-                                                    <a href="https://devmarcioreis.github.io/adicionando-itens/" target="_blank">
-                                                    <i class="uil uil-mouse-alt-2"></i> Reviews</a>
-                                                </div>
-                                                    <img src="assets/images/slider/itens.jpg">
-                                            </div>
-                                            <div class="card-text">
-                                                <strong>Adicionar itens</strong>
-                                                <p>Adicione itens com JavaScript de forma fácil.</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <p class="porfolio-info">
-                                Obs: Alguns dos projetos apresentados não são responsivos, a melhor visualização se dará em desktop.<br> Mais códigos no GitHub. 
-                                <a href="https://github.com/devmarcioreis" target="_blank"><i class="uil uil-github github1"></i></a>
-                            </p>
-                        </div>  
-                    </section>
+            <!--========Portfolio========-->
+            <section class="portfolio" id="portfolio">
+                <div class="portfolio-text">
+                    <h2>Portfólio</h2>
+                    <p>Veja alguns dos projetos que desenvolvi, seja para clientes, acadêmicos, pessoais ou para aprendizado.</p>
                 </div>
-            </div>
-            
-            <!----------Contato---------->
-            <div class="timeline" id="contact">
-                <div class="timeline-item">
-                    <i class="uil uil-file-contract timeline-icon"></i>
-                    <h4>contato</h4>
-                    <section class="contact">
-                        <div class="contact-box">
-                            <div class="contact-data">
-                                <div class="contact-information">
-                                    <h3 class="sontact-subtitle">Me ligue</h3>
-                                    <span class="contact-description">
-                                        <i class="lni lni-phone contact-icon"></i>
-                                        <i class="uil uil-phone-alt"></i> 55 (11) 95555-5555
-                                    </span>
-                                </div>
-                                <div class="contact-information">
-                                    <h3 class="sontact-subtitle">Envie um email</h3>
-                                    <span class="contact-description">
-                                        <i class="lni lni-user contact-icon"></i>
-                                        <i class="uil uil-at"></i> dev.marcioreis@gmail.com
-                                    </span>
-                                </div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">   
+                        <div class="portfolio-card swiper-slide">
+                            <div class="card__image">
+                                <img src="assets/images/slide/musica.jpg">
+                            </div>
+                            <div class="card__content">
+                                <span class="card__title">Projeto Musical</span>
+                                <span class="card__name">Projeto desenvolvido para fins acadêmicos.</span>
+                                <p class="card__text">Desenvolvido utilizando HTML, CSS e JavaScript.
+                                <i class="uil uil-html5 html"></i> <i class="uil uil-css3-simple css"></i> <i class="uil uil-java-script js"></i> </p>
+                                <a href="https://devmarcioreis.github.io/academico-musical/" target="_blank" class="card__btn">Ver mais</a>
                             </div>
                         </div>
-                        <form action="post" class="contact-form">
-                            <div class="contact-inputs">
-                                <div class="contact-content">
-                                    <input type="text" class="contact-input">
-                                    <label for="" class="contact-label"><i class="uil uil-user"></i> Nome</label>
-                                    <span></span>
-                                </div>
-                                <div class="contact-content">
-                                    <input type="email" class="contact-input">
-                                    <label for="" class="contact-label"><i class="uil uil-envelope"></i> Email</label>
-                                    <span></span>
-                                </div>
-                                <div class="contact-content">
-                                    <input type="number" class="contact-input">
-                                    <label for="" class="contact-label"><i class="uil uil-phone-volume"></i> Telefone</label>
-                                    <span></span>
-                                </div>
-                                <div class="contact-content contact-area">
-                                    <textarea name="" id="" cols="30" rows="10" class="contact-input"></textarea>
-                                    <label for="" class="contact-label"><i class="uil uil-comment-chart-line"></i> Mensagem</label>
-                                    <span></span>
-                                </div>
+                        <div class="portfolio-card swiper-slide">
+                            <div class="card__image">
+                                <img src="assets/images/slide/menu.jpg">
                             </div>
-                                <a href="#" class="btn-default contact-btn"><i class="uil uil-envelope-upload-alt"></i> Enviar</a>
-                        </form>
-                    </section>
+                            <div class="card__content">
+                                <span class="card__title">Menu Lateral</span>
+                                <span class="card__name">Projeto desenvolvido para testes.</span>
+                                <p class="card__text">Desenvolvido utilizando HTML, CSS e JavaScript.
+                                <i class="uil uil-html5 html"></i> <i class="uil uil-css3-simple css"></i> <i class="uil uil-java-script js"></i> </p>
+                                <a href="https://devmarcioreis.github.io/menu-lateral/" target="_blank" class="card__btn">Ver mais</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-card swiper-slide">
+                            <div class="card__image">
+                                <img src="assets/images/slide/bars.jpg">
+                            </div>
+                            <div class="card__content">
+                                <span class="card__title">Skills Bars</span>
+                                <span class="card__name">Projeto pessoal.</span>
+                                <p class="card__text">Desenvolvido utilizando JavaScript.
+                                <i class="uil uil-java-script js"></i> </p>
+                                <a href="https://devmarcioreis.github.io/barra-progresso/" target="_blank" class="card__btn">Ver mais</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-card swiper-slide">
+                            <div class="card__image">
+                                <img src="assets/images/slide/colors.jpg">
+                            </div>
+                            <div class="card__content">
+                                <span class="card__title">Cores em movimento</span>
+                                <span class="card__name">Projeto desenvolvido para fins acadêmicos.</span>
+                                <p class="card__text">Desenvolvido utilizando CSS.
+                                <i class="uil uil-css3-simple css"></i></p>
+                                <a href="https://devmarcioreis.github.io/box-cores/" target="_blank" class="card__btn">Ver mais</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-card swiper-slide">
+                            <div class="card__image">
+                                <img src="assets/images/slide/calculadora.jpg">
+                            </div>
+                            <div class="card__content">
+                                <span class="card__title">Calculadora</span>
+                                <span class="card__name">Calculadora funcionando e bem legal, faça suas contas..</span>
+                                <p class="card__text">Desenvolvido utilizando HTML e CSS.
+                                <i class="uil uil-html5 html"></i> <i class="uil uil-css3-simple css"></i></p>
+                                <a href="https://devmarcioreis.github.io/calculadora-html-css/" target="_blank" class="card__btn">Ver mais</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-card swiper-slide">
+                            <div class="card__image">
+                                <img src="assets/images/slide/dog.jpg">
+                            </div>
+                            <div class="card__content">
+                                <span class="card__title">Card Glass</span>
+                                <span class="card__name">Não esqueça de seguir o cachorrinho em suas redes.</span>
+                                <p class="card__text">Desenvolvido utilizando HTML e CSS.
+                                <i class="uil uil-html5 html"></i> <i class="uil uil-css3-simple css"></i></p>
+                                <a href="https://devmarcioreis.github.io/card-vidro/" target="_blank" class="card__btn">Ver mais</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-card swiper-slide">
+                            <div class="card__image">
+                                <img src="assets/images/slide/input.jpg">
+                            </div>
+                            <div class="card__content">
+                                <span class="card__title">Input CSS</span>
+                                <span class="card__name">Projeto desenvolvido para fins acadêmicos.</span>
+                                <p class="card__text">Desenvolvido utilizando HTML e CSS.
+                                <i class="uil uil-html5 html"></i> <i class="uil uil-css3-simple css"></i></p>
+                                <a href="https://devmarcioreis.github.io/input-box/" target="_blank" class="card__btn">Ver mais</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-card swiper-slide">
+                            <div class="card__image">
+                                <img src="assets/images/slide/itens.jpg">
+                            </div>
+                            <div class="card__content">
+                                <span class="card__title">Adicionar itens</span>
+                                <span class="card__name">Adicione itens com JavaScript de forma fácil.</span>
+                                <p class="card__text">Desenvolvido utilizando HTML, CSS e JavaScript.
+                                <i class="uil uil-html5 html"></i> <i class="uil uil-css3-simple css"></i> <i class="uil uil-java-script js"></i> </p>
+                                <a href="https://devmarcioreis.github.io/adicionando-itens/" target="_blank" class="card__btn">Ver mais</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            
-        </div> 
 
-        <!----------Footer---------->
+                <p class="porfolio-info">
+                    Obs: Alguns dos projetos apresentados não são responsivos, a melhor visualização se dará em desktop.<br> <span>Mais códigos no GitHub</span>. 
+                    <a href="https://github.com/devmarcioreis" target="_blank"><i class="uil uil-github portfolio-icon"></i></a>
+                </p>
+            </section>
+
+
+        </div>
+
+        <!--========Footer========-->
         <footer>
             <div class="footer__cards">
                 <div class="footer__card">
                     <div class="footer__box">
-                        <h5>Desenvolvimento</h5>
+                        <h4>Desenvolvimento</h4>
                         <p>Site desenvolvido utilizando:</p>
                         <i class="uil uil-html5"></i>
                         <i class="uil uil-css3-simple"></i>
                         <i class="uil uil-java-script"></i>
                     </div>
                     <div class="footer__box">
-                        <h5>Dispositivos</h5>
+                        <h4>Dispositivos</h4>
                         <p>Site responsivel, acesse em seu dispositivo:</p>
                         <i class="uil uil-tv-retro"></i>
                         <i class="uil uil-desktop"></i>
@@ -414,47 +320,70 @@
                         <i class="uil uil-tablet"></i>
                     </div>
                     <div class="footer__box">
-                        <h5>Projeto</h5>
+                        <h4>Projeto</h4>
                         <p>Desenvolvido por:</p>
                         <a href="index.html">M<span>:)</span>REISS</a>
                     </div>
                 </div>
-                <ul class="footer__social">
-                    <li><a href="https://www.linkedin.com/in/m%C3%A1rcio-reis-716b649b/" target="_blank"><i class="uil uil-linkedin"></i></a></li>
-                    <li><a href="https://github.com/devmarcioreis" target="_blank"><i class="uil uil-github"></i></a></li>
-                    <li><a href="https://twitter.com/" target="_blank"><i class="uil uil-twitter"></i></a></li>
-                    <li><a href="https://www.instagram.com/" target="_blank"><i class="uil uil-instagram-alt"></i></a></li>
-                    <li><a href="https://www.facebook.com/" target="_blank"><i class="uil uil-facebook"></i></a></li>
-                </ul>
-                <p class="footer__copy">&copy; 2022 Todos os direitos reservados.</p>
+                <div class="footer__social">
+                    <p>Acesse:</p>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/m%C3%A1rcio-reis-716b649b/" target="_blank"><i class="uil uil-linkedin"></i></a></li>
+                        <li><a href="https://github.com/devmarcioreis" target="_blank"><i class="uil uil-github"></i></a></li>
+                        <li><a href="https://twitter.com/" target="_blank"><i class="uil uil-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><i class="uil uil-instagram-alt"></i></a></li>
+                        <li><a href="https://www.facebook.com/" target="_blank"><i class="uil uil-facebook"></i></a></li>
+                    </ul>
+                </div>
             </div>
+            <p class="footer__copy">&copy; 2022 Todos os direitos reservados.</p>
         </footer>
 
     </main>
 
-    <!----------Pop-up---------->
-    <div class="popup-wrapper">
-        <div class="popup">
-            <div class="popup-close">x</div>
 
-            <div class="popup-content">
-                    <h6>Entre em contato comigo através:</h6>
-                <div class="popup-contact">
-                    <a href="https://desktop.telegram.org/" target="_blank"><i class="uil uil-telegram-alt"></i></a>
-                     <a href="https://web.whatsapp.com/" target="_blank"><i class="uil uil-whatsapp"></i></a>
-                    <a href="https://accounts.google.com/v3/signin/identifier?dsh=S-1728013874%3A1662149324068342&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&rip=1&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AQN2RmVEhiBRFDCx01k942RoOLF6ieZG4KxSEWu18WAbZmzTR8HkBA7674JvntWpGrO6wDoCahp1" target="_blank"><i class="uil uil-envelope-edit"></i></a>
-                </div>
-            </div>
+
+
+
+   <!--========Popup========-->
+    <div class="popup" id="popup">
+        <div class="popup-btn" id="closePopup">x</div>
+        <p>Fale comigo através:</p>
+        <div class="popup-contact">
+            <a href="https://desktop.telegram.org/" target="_blank"><i class="uil uil-telegram-alt"></i></a>
+             <a href="https://web.whatsapp.com/send?phone=5511994341245" target="_blank"><i class="uil uil-whatsapp"></i></a>
+            <a href="https://accounts.google.com/v3/signin/identifier?dsh=S-1728013874%3A1662149324068342&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&rip=1&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AQN2RmVEhiBRFDCx01k942RoOLF6ieZG4KxSEWu18WAbZmzTR8HkBA7674JvntWpGrO6wDoCahp1" target="_blank"><i class="uil uil-envelope-edit"></i></a>
         </div>
     </div>
 
     
-    <!----------JavaScript---------->
+
+
+    <!--========JavaScript========-->
     <script src="assets/js/main.js"></script>
 
-    <!----------JQuery---------->
-    <script src="assets/js/JQuery3.3.1.js"></script>
-    <script src="assets/js/lightslider.js"></script>
-    <script src="assets/js/slider.js"></script>
+    <!--========JavaScript Wiper========-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!--========JavaScript Initialize  Wiper========-->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 300,
+          modifier: 1,
+          slideShadows: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+
 </body>
 </html>
