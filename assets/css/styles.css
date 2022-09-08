@@ -682,6 +682,9 @@ footer {
     margin-top: .5rem;
     color: var(--color-dark);
 }
+.popup p span {
+    color: var(--color-primary);
+}
 .popup-btn {
    font-size: 1.5rem;
    cursor: pointer;
