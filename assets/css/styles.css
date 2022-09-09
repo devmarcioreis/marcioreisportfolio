@@ -19,9 +19,7 @@
     --color-primary: #2196F3;
     --color-secundary: #DD2651;
     --color-background: #090B13;
-    --color-1: #7828FF;
     --color-2: #09011c;
-    --color-glass: rgba(255, 255, 255, 0.051);
     --color-white: #fff;
     --color-dark: #000;
     --color-green: #2B7A0B;
@@ -31,8 +29,6 @@
     --color-icon-js: #F7E018;
     --color-icon-react: #00D8FF;
     --color-icon-angular: #D6002F;
-    --color-icon-footer: #444B55;
-    --color-blue: #3e7beb;
     --color-transparent: rgba(0, 0, 0, 0);
     --color-facebook: #38548F;
     --color-twitter: #28A0D5;
@@ -41,14 +37,10 @@
     --color-telegram: #2FA0D6;
     --color-github: #000000;
     --color-whatsapp: #2BAF3E;
-    --color-border: rgba(255, 255, 255, 0.137);
     --color-shadow-social: inset 10px 10px 1px rgba(248, 248, 248, 0.205), 
     5px 10px 20px rgba(0, 0, 0, 0.123), 
     5px 2px 1px rgba(255, 249, 249, 0.05), 
     inset -10px -10px 15px rgba(255, 255, 255, 0.158);
-    --color-border-social: 1px solid rgba(0, 0, 0, 0);
-    --font-semi-bold: 600;
-    --font-logo-bolder: 900;
     --border-radius: 1.25rem;
     --box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
 
@@ -69,7 +61,6 @@ body {
     font-style: normal;
     font-size: .9rem;
     font-family: var(--font-principal);
-    color: var(--color-dark);
 }
 img {
     max-width: 100%;
@@ -77,7 +68,7 @@ img {
     vertical-align: middle;
 }
 a {
-    color: var(--color-2);
+    color: var(--color-dark);
     font-family: var(--font-principal);
 }
 h1, h2, h3, h4, h5, h6 {

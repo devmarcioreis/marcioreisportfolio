@@ -11,8 +11,6 @@ const openMenu = (toggleId, navId) => {
 };
 openMenu('nav-toggle', 'nav-menu')
 
-
-
 const navLink = document.querySelectorAll('.nav__link');
 navMenu = document.getElementById('nav-menu');
 
