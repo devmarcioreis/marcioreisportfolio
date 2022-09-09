@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-Br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--========Autor========-->
-    <meta name="author" contente="Marcio Reis">
-    <meta name="description" contente="Portfólio do desenvolvedor front-end Marcio Reis">
-    <meta name="keywords" contente="Portfolio, html, css, front-end, JavaScript, Desenvolvimento, React, React Native, Angular, NodeJS, Vue, Android, IOS, HTTP, SEO, Scrum, Bootstrap, Git, GitHub, Tailwind, Regex, QA, Php, TypeScript">
-    <!--========Icon========-->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <!--========Swiper========-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
-    <!--========CSS========-->
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <!--========Favicon========-->
-    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
-    <title>M:)REISS | Portfólio Marcio Reis</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--========Autor========-->
+        <meta name="author" contente="Marcio Reis">
+        <meta name="description" contente="Portfólio do desenvolvedor front-end Marcio Reis">
+        <meta name="keywords" contente="Portfolio, html, css, front-end, JavaScript, Desenvolvimento, React, React Native, Angular, NodeJS, Vue, Android, IOS, HTTP, SEO, Scrum, Bootstrap, Git, GitHub, Tailwind, Regex, QA, Php, TypeScript">
+        <!--========Icon========-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <!--========Swiper========-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+        <!--========CSS========-->
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <!--========Favicon========-->
+        <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
+        <title>M:)REISS | Portfólio Marcio Reis</title>
+    </head>
+
 
 <body>
 
-    <header >
-        <!--========Navbar========-->
-        <nav class="nav" id="header">
-            <div class="nav__container">
-                <a href="index.html" class="nav__logo">M<span>:)</span>REISS</a>
-                <ul class="nav__links">
-                    <li><a href="#home" class="active"><i class="uil uil-estate"></i> Home</a></li>
-                    <li><a href="#about"><i class="uil uil-user"></i> Sobre</a></li>
-                    <li><a href="#services"><i class="uil uil-constructor"></i> Serviços</a></li>
-                    <li><a href="#portfolio"><i class="uil uil-bag"></i> Portfólio</a></li>
-                    <li><a href="#contact"><i class="uil uil-comment-alt-edit"></i> Contato</a></li>
+    <!--========Header Navbar========-->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="uil uil-bars"></i>
+            </div>
+            <div class="nav__logo">
+                <a href="index.html">M<span>:)</span>REISS</a>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link" ><i class="uil uil-estate"></i> Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link"><i class="uil uil-user-square"></i> Sobre</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link"><i class="uil uil-edit"></i> Serviços</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link"><i class="uil uil-clipboard-notes"></i> Portfólio</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link"><i class="uil uil-file-download-alt"></i> Currículo</a></li>
                 </ul>
-                <button class="nav__toggle-btn" id="nav__toggle-open"><i class="uil uil-bars"></i></button>
-                <button class="nav__toggle-btn" id="nav__toggle-close"><i class="uil uil-multiply"></i></button>
             </div>
         </nav>
     </header>
@@ -67,7 +71,7 @@
                         </aside>
 
                         <div class="home-right">
-                            <img src="assets/images/profile.png" alt="Lâmpada">
+                            <img src="assets/images/profile.png" alt="Imagem pessoa com notebook">
                         </div>
                         
                         <div class="home-social">
@@ -341,11 +345,7 @@
 
     </main>
 
-
-
-
-
-   <!--========Popup========-->
+    <!--========Popup========-->
     <div class="popup" id="popup">
         <div class="popup-btn" id="closePopup">x</div>
         <p>Fale comigo através: <br> <i class="uil uil-envelope-alt"></i><span> dev.marcioreis@gmail.com</span> ou <i class="uil uil-corner-right-down"></i></p>
@@ -354,17 +354,15 @@
              <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5511994341245" target="_blank"><i class="uil uil-whatsapp"></i></a>
         </div>
     </div>
-
     
-
 
     <!--========JavaScript========-->
     <script src="assets/js/main.js"></script>
 
-    <!--========JavaScript Wiper========-->
+    <!--========JavaScript Swiper========-->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-    <!--========JavaScript Initialize  Wiper========-->
+    <!--========JavaScript Initialize  Swiper========-->
     <script>
       var swiper = new Swiper(".mySwiper", {
         effect: "coverflow",
