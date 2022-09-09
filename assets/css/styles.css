@@ -18,7 +18,7 @@
     --color-text: #A5A5A7;
     --color-primary: #2196F3;
     --color-secundary: #DD2651;
-    --color-background: #A5DCF0;
+    --color-background: #090B13;
     --color-1: #7828FF;
     --color-2: #09011c;
     --color-glass: rgba(255, 255, 255, 0.051);
@@ -135,8 +135,8 @@ p, span, small {
     animation-iteration-count: 1;
 }
 
-/*==========Navbar==========*/
-.nav {
+/*==========Header Navbar==========*/
+.header {
     width: 100vw;
     height: 3.5rem;
     display: grid;
@@ -147,33 +147,29 @@ p, span, small {
     z-index: 2;
     box-shadow: 0 -2rem 3rem 1rem var(--color-dark);
 }
-.nav .nav__container {
+.header .nav {
     width: 95%;
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.nav .nav__container .nav__logo {
+.nav__toggle i {
+    font-size: 1.7rem;
+    cursor: pointer;
+    color: var(--color-white);
+}
+.nav__logo a {
     font-family: var(--font-logo);
     font-size: 1.2rem;
     font-weight: 900;
     color: var(--color-primary);
 }
-.nav .nav__container .nav__logo span {
+.nav__logo a span {
     font-family: var(--font-logo);
     color: var(--color-secundary);
 }
-.nav .nav__container .nav__links {
-    display: flex;
-    align-items: center;
-    gap: 4rem;
-    height: 100%;
-}
-.nav .nav__container .nav__links li {
-    height: 100%;
-}
-.nav .nav__container .nav__links li a {
+.header .nav .nav__menu .nav__list .nav__item a {
     color: var(--color-primary);
     font-weight: 500;
     font-size: 1rem;
@@ -181,47 +177,87 @@ p, span, small {
     display: flex;
     align-items: center;
     position: relative;
-    transition: .5s ease; 
+    transition: .5s ease;
 }
-.nav .nav__container .nav__links li a::before {
-    content: '';
-    background: var(--color-primary);
-    width: 100%;
-    height: 0;
-    position: absolute;
-    z-index: -1;
-    left: 0;
-    bottom: 0;
-    transition: height .5s;
+
+
+/*==========Media Query Navbar Tablet / Mobile==========*/
+@media (min-width: 0px) and (max-width: 1024px) {
+    .nav__logo a {
+        color: var(--color-white);
+    }
+    .header .nav .nav__menu .nav__list .nav__item a {
+        color: var(--color-white);
+    }
+    .header .nav .nav__menu .nav__list .nav__item a i {
+        color: var(--color-white);
+    }
+    .nav__menu {
+        position: fixed;
+        top: 3.5rem;
+        left: -100%;
+        width: 40%;
+        height: 100vh;
+        background: var(--color-background);
+        transition: all .5s ease;
+    }
+    .nav__list {
+        margin-left: 1rem;
+    }
+    .nav__item {
+        margin: 2rem auto;
+    }
+    .nav__item a i {
+        color: var(--color-dark);
+        letter-spacing: .2rem;
+    }
+
 }
-.nav .nav__container .nav__links li a:hover {
-    color: var(--color-white);
-}
-.nav .nav__container .nav__links li a:hover::before {
-    height: 3.5rem;
-}
-.nav .nav__container .nav__links li a.active::after {
-    content: '';
-    display: block;
-    background: var(--color-primary);
-    border-radius: 1rem;
-    height: 5px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-}
-.nav .nav__container .nav__links li i {
-    letter-spacing: .2rem;
-}
-.nav .nav__container .nav__toggle-btn {
-    display: none;
+
+/*==========Media Query Navbar Desktop / Big Screen==========*/
+@media (min-width: 1024px) {
+    .nav__toggle {
+        display: none;
+    }
+    .header .nav .nav__menu .nav__list {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+        height: 100%;
+    }
+    .header .nav .nav__menu .nav__list .nav__item {
+        height: 100%;
+    }
+    .header .nav .nav__menu .nav__list .nav__item a::before {
+        content: '';
+        background: var(--color-primary);
+        width: 100%;
+        height: 0;
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        bottom: -1.2rem;
+        transition: height .5s;
+    }
+    .header .nav .nav__menu .nav__list .nav__item a:hover {
+        color: var(--color-white);
+    }
+    .header .nav .nav__menu .nav__list .nav__item a:hover::before {
+        height: 3.5rem;
+    }
+    .header .nav .nav__menu .nav__list .nav__item a i {
+        letter-spacing: .2rem;
+    }
+
 }
 
 /*==========JavaScript==========*/
+.show {
+    left: 0;
+}
 .scroll-header {
     background: var(--color-dark);
 }
-
 
 /*==========Main==========*/
 main {
@@ -293,7 +329,6 @@ main .main__content {
     color: var(--color-primary);
     transition: .5s ease;
 }
-
 
 /*==========Scrol Down==========*/
 .scroll-down {
@@ -718,74 +753,6 @@ footer {
 }
 
 
-
-/*==========Media Query Navbar==========*/
-@media (min-width: 0px) and (max-width: 1024px) {
-    .nav .nav__container {
-        position: relative;
-    }
-    .nav .nav__container .nav__logo {
-        color: var(--color-white);
-    }
-    .nav .nav__container .nav__links {
-        position: absolute;
-        top: 100%;
-        width: 50%;
-        right: -1.6rem;
-        flex-direction: column;
-        gap: 0;
-        align-items: flex-start;
-        display: none;
-        perspective: 500px;
-    }
-    .nav .nav__container .nav__links li {
-        box-shadow: -2rem 4rem 4rem var(--borda);
-        width: 100%;
-    }
-
-    /*==========Animação==========*/
-    .nav .nav__container .nav__links li {
-        transform: rotateX(90deg);
-        transform-origin: top;
-        animation: animacao 1s ease forwards;
-        opacity: 0;
-    }
-    
-    @keyframes animacao {
-        to {
-            transform: rotate(0);
-            opacity: 1;
-        }
-    }
-
-    .nav .nav__container .nav__links li a {
-        background: var(--color-dark);
-        color: var(--color-white);
-        height: 3.5rem;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        padding: 0 3rem 0 2rem;
-        border-top: 1px solid var(--borda);
-    }
-    .nav .nav__container .nav__links li a.active::after {
-        display: none;
-    }
-    .nav .nav__container .nav__toggle-btn {
-        display: inline-block;
-        font-size: 1.5rem;
-        color: var(--color-white);
-        border: none;
-        background: var(--color-transparent);
-        cursor: pointer;
-    }
-    .nav .nav__container #nav__toggle-close {
-        display: none;
-    }
-
-}
-
-
 /*==========Media Query Tablet==========*/
 @media (min-width: 768px) and (max-width: 1024px) {
     body {
@@ -882,15 +849,13 @@ footer {
     .portfolio-icon:hover {
         color: var(--color-dark);
     }
-
-
+    
     /*==========Footer==========*/
     .footer__cards {
         flex-direction: column;
     }
     
 }
-
 
 
 /*==========Media Query Mobile==========*/
@@ -1026,6 +991,3 @@ footer {
     }
     
 }
-
-
-
