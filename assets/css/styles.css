@@ -15,7 +15,7 @@
     --font-principal: 'Poppins';
     --font-logo: 'Nunito';
     --font-text: 'Rubik';
-    --color-text: #A5A5A7;
+    --color-text: #dededf;
     --color-primary: #2196F3;
     --color-secundary: #DD2651;
     --color-background: #090B13;
@@ -37,12 +37,13 @@
     --color-telegram: #2FA0D6;
     --color-github: #000000;
     --color-whatsapp: #2BAF3E;
-    --color-shadow-social: inset 10px 10px 1px rgba(248, 248, 248, 0.205), 
-    5px 10px 20px rgba(0, 0, 0, 0.123), 
-    5px 2px 1px rgba(255, 249, 249, 0.05), 
-    inset -10px -10px 15px rgba(255, 255, 255, 0.158);
+    --color-shadow-social: inset 10px 10px 1px rgba(248, 248, 248, 0.027), 
+    5px 10px 20px rgba(0, 0, 0, 0.014), 
+    5px 2px 1px rgba(255, 249, 249, 0), 
+    inset -10px -10px 15px rgba(255, 255, 255, 0.034);
     --border-radius: 1.25rem;
     --box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+    --bg-gradient: linear-gradient(#090B13, #7597de);
 
 }
 
@@ -61,6 +62,7 @@ body {
     font-style: normal;
     font-size: .9rem;
     font-family: var(--font-principal);
+    background: var(--bg-gradient);
 }
 img {
     max-width: 100%;
@@ -76,6 +78,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 p, span, small {
     font-family: var(--font-text);
+    color: var(--color-text);
 }
 .html {
     color: var(--color-icon-html);
@@ -111,7 +114,7 @@ p, span, small {
     }
 }
 .btn-default {
-    color: var(--color-primary);
+    color: var(--color-white);
     letter-spacing: .2rem;
     vertical-align: middle;
     display: inline-block;
@@ -154,14 +157,14 @@ p, span, small {
     font-family: var(--font-logo);
     font-size: 1.2rem;
     font-weight: 900;
-    color: var(--color-primary);
+    color: var(--color-white);
 }
 .nav__logo a span {
     font-family: var(--font-logo);
     color: var(--color-secundary);
 }
 .header .nav .nav__menu .nav__list .nav__item a {
-    color: var(--color-primary);
+    color: var(--color-white);
     font-weight: 500;
     font-size: 1rem;
     height: 100%;
@@ -170,26 +173,21 @@ p, span, small {
     position: relative;
     transition: .5s ease;
 }
+.header .nav .nav__menu .nav__list .nav__item a i {
+    color: var(--color-white);
+    letter-spacing: .2rem;
+}
 
 
 /*==========Media Query Navbar Tablet / Mobile==========*/
 @media (min-width: 0px) and (max-width: 1024px) {
-    .nav__logo a {
-        color: var(--color-white);
-    }
-    .header .nav .nav__menu .nav__list .nav__item a {
-        color: var(--color-white);
-    }
-    .header .nav .nav__menu .nav__list .nav__item a i {
-        color: var(--color-white);
-    }
     .nav__menu {
         position: fixed;
         top: 3.5rem;
         left: -100%;
         width: 40%;
         height: 100vh;
-        background: var(--color-background);
+        background: var(--color-dark);
         transition: all .5s ease;
     }
     .nav__list {
@@ -197,10 +195,6 @@ p, span, small {
     }
     .nav__item {
         margin: 2rem auto;
-    }
-    .nav__item a i {
-        color: var(--color-dark);
-        letter-spacing: .2rem;
     }
 
 }
@@ -236,9 +230,6 @@ p, span, small {
     .header .nav .nav__menu .nav__list .nav__item a:hover::before {
         height: 3.5rem;
     }
-    .header .nav .nav__menu .nav__list .nav__item a i {
-        letter-spacing: .2rem;
-    }
 
 }
 
@@ -261,9 +252,13 @@ main .main__content {
 
 /*==========Home==========*/
 .home {
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.126);
     border-radius: 1rem;
     margin-top: 7rem;
+    background: url(/assets/images/stars.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   
 }
 .home .home__container {
     padding: 1rem;
@@ -279,15 +274,16 @@ main .main__content {
 .home .home__container .home__box .home-left h1 {
     font-size: 1.5rem;
     margin-bottom: -.1rem;
+    color: var(--color-primary);
 }
 .home .home__container .home__box .home-left h1 span {
     font-size: 4rem;
-    color: var(--color-primary);
     line-height: 3rem;
 }
 .home .home__container .home__box .home-left h2 {
     font-size: 1.2rem;
     margin-bottom: 1rem;
+    color: var(--color-primary);
 }
 .home .home__container .home__box .home-left p {
     font-size: 1rem;
@@ -312,12 +308,12 @@ main .main__content {
     margin: -5rem 1rem 0 0;
 }
 .home .home__container .home__box .home-social i {
-    color: var(--color-2);
+    color: var(--color-primary);
     font-size: 1.7rem;
     transition: .5s ease;
 }
 .home .home__container .home__box .home-social i:hover {
-    color: var(--color-primary);
+    color: var(--color-secundary);
     transition: .5s ease;
 }
 
@@ -348,7 +344,7 @@ main .main__content {
     }
 }
 .mouse {
-    border: 2px solid var(--color-dark);
+    border: 2px solid var(--color-white);
     display: block;
     height: 1.75rem;
     width: 1.25rem;
@@ -357,7 +353,7 @@ main .main__content {
     position: relative;
 }
 .mouse i {
-    color: var(--color-dark);
+    color: var(--color-white);
     position: absolute;
     top: .5rem;
     left: 7%;
@@ -395,7 +391,7 @@ main .main__content {
 }
 .about__box .skills .skill-item h4 {
     text-align: left;
-    color: var(--color-dark);
+    color: var(--color-white);
     margin-bottom: .4rem;
 }
 .about__box .skills .skill-item .progress {
@@ -403,7 +399,7 @@ main .main__content {
     border-radius: var(--border-radius);
     width: 100%;
     position: relative;
-    background: rgba(0, 0, 0, 0.048);
+    background: var(--color-white);
 }
 .about__box .skills .skill-item:not(:last-child) {
     margin-bottom: 1.5rem;
@@ -438,8 +434,8 @@ main .main__content {
 .about__box .skills .skill-item .skill-percent {
     position: absolute;
     right: 0;
-    top: .6rem;
-    color: var(--color-2);
+    top: .9rem;
+    color: var(--color-white);
 }
 
 /*==========Services==========*/
@@ -478,9 +474,6 @@ main .main__content {
 .card:nth-child(3) {
     padding-right: 15px;
 }
-.card p {
-    margin-bottom: 1rem;
-}
 .js-icon, .react-icon, .angular-icon {
     font-size: 4rem;
 }
@@ -493,6 +486,10 @@ main .main__content {
 }
 .card-item h3.lang {
     margin: .75rem 0;
+}
+.services-cards .card .card-item p {
+    margin-bottom: 1rem;
+    color: var(--color-dark);
 }
 .card-item.middle {
     padding: 3.25rem 2.5rem;  
@@ -507,7 +504,7 @@ main .main__content {
     color: var(--color-white);
 }
 .github-icon {
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: var(--color-white);
 }
 
@@ -573,14 +570,17 @@ main .main__content {
     position: relative;
     top: .2rem;
     margin-bottom: .5rem;
+    color: var(--color-dark);
 }
 .card__name {
     text-align: center;
+    color: var(--color-primary);
 }
 .card__text {
     font-size: 1rem;
     text-align: center;
     margin: 1rem 0;
+    color: var(--color-dark);
 }
 .card__btn {
     background: var(--color-primary);
@@ -599,14 +599,11 @@ main .main__content {
 }
 .porfolio-info span {
     font-weight: bold;
+    color: var(--color-dark);
 }
 .portfolio-icon {
     font-size: 2rem;
-    color: var(--color-primary);
-    transition: all .5s;
-}
-.portfolio-icon:hover {
-    color: var(--color-secundary);
+    color: var(--color-dark);
 }
 
 /*==========Footer==========*/
@@ -648,7 +645,7 @@ footer {
     font-family: var(--font-logo);
     font-size: 1.2rem;
     font-weight: 900;
-    color: var(--color-primary);
+    color: var(--color-white);
 }
 .footer__box a span {
     font-family: var(--font-logo);
@@ -685,8 +682,7 @@ footer {
 .popup {
     width: 20rem;
     height: 12rem;
-    background: var(--color-white);
-    box-shadow: var(--color-shadow-social);
+    background: var(--color-primary);
     border-radius: 1rem;
     position: absolute;
     top: 0;
@@ -694,7 +690,6 @@ footer {
     transform: translate(-50%, -50%) scale(0.1);
     text-align: center;
     padding: 1rem;
-    color: var(--color-white);
     visibility: hidden;
     transition: transform .4s, top .4s;
 }
@@ -706,10 +701,10 @@ footer {
 .popup p {
     font-size: 1rem;
     margin-top: .5rem;
-    color: var(--color-dark);
+    color: var(--color-white);
 }
 .popup p span {
-    color: var(--color-primary);
+    color: var(--color-white);
 }
 .popup-btn {
    font-size: 1.5rem;
@@ -746,9 +741,6 @@ footer {
 
 /*==========Media Query Tablet==========*/
 @media (min-width: 768px) and (max-width: 1024px) {
-    body {
-        background: var(--color-primary);
-    }
     .home {
         margin: 5rem auto 10rem auto;
         box-shadow: none;
@@ -767,7 +759,6 @@ footer {
     }
     .home .home__container .home__box .home-left h1 span {
         font-size: 3.5rem;
-        color: var(--color-white);
     }
     .home .home__container .home__box .home-left h2 {
         font-size: 1.5rem;
@@ -780,7 +771,6 @@ footer {
     }
     .home .home__container .home__box .home-left .home-btn button {
         background: var(--color-purple);
-        color: var(--color-white);
     }
     .home .home__container .home__box .home-social {
         margin-top: -25rem;
@@ -789,18 +779,9 @@ footer {
     }
     .home .home__container .home__box .home-social i {
         font-size: 1.5rem;
-        color: var(--color-white);
     }
     .home .home__container .home__box .home-social i:hover {
-        color: var(--color-white);
-    }
-
-    /*==========Scroll Down==========*/
-    .mouse {
-        border: 2px solid var(--color-white);
-    }
-    .mouse i {
-        color: var(--color-white);
+        color: var(--color-primary);
     }
 
     /*==========About==========*/
@@ -811,7 +792,6 @@ footer {
         margin: auto;
     }
     .about .about__container .about__box .about-text h2 {
-        color: var(--color-dark);
         text-align: center;
     }
     .about .about__container .about__box .about-text p {
@@ -821,26 +801,13 @@ footer {
         background: var(--color-white);
         border-radius: 1rem;
     }
-
-    /*==========Services==========*/
-    .card-item.middle {
-        background: var(--color-white);
+    .about__box .skills .skill-item h4 {
+        color: var(--color-dark);
     }
-    .services-description h2 {
+    .about__box .skills .skill-item .progress .skill-percent {
         color: var(--color-dark);
     }
 
-    /*==========Portfolio==========*/
-    .portfolio-text h2 {
-        color: var(--color-dark);
-    }
-    .portfolio-icon {
-        color: var(--color-dark);
-    }
-    .portfolio-icon:hover {
-        color: var(--color-dark);
-    }
-    
     /*==========Footer==========*/
     .footer__cards {
         flex-direction: column;
@@ -851,9 +818,6 @@ footer {
 
 /*==========Media Query Mobile==========*/
 @media (min-width: 0px) and (max-width: 768px) {
-    body {
-        background: #090B13;
-    }
     .home {
         margin-top: 4rem;
         box-shadow: none;
@@ -869,25 +833,18 @@ footer {
     }
     .home .home__container .home__box .home-left h1 {
         font-size: 1rem;
-        color: var(--color-white);
     }
     .home .home__container .home__box .home-left h1 span {
         font-size: 3rem;
-        color: var(--color-white);
     }
     .home .home__container .home__box .home-left h2 {
         font-size: 1rem;
-        color: var(--color-primary);
-    }
-    .home .home__container .home__box .home-left p {
-        color: var(--color-text);
     }
     .home .home__container .home__box .home-left .language {
         font-size: 1.2rem;
     }
     .home .home__container .home__box .home-left .home-btn button {
         background: var(--color-purple);
-        color: var(--color-white);
     }
     .home .home__container .home__box .home-social {
         flex-direction: row;
@@ -896,18 +853,9 @@ footer {
     }
     .home .home__container .home__box .home-social i {
         font-size: 1.3rem;
-        color: var(--color-primary);
     }
     .home .home__container .home__box .home-social i:hover {
         color: var(--color-primary);
-    }
-
-    /*==========Scroll Down==========*/
-    .mouse {
-        border: 2px solid var(--color-white);
-    }
-    .mouse i {
-        color: var(--color-white);
     }
 
     /*==========About==========*/
@@ -918,24 +866,22 @@ footer {
         flex-direction: column;
     }
     .about .about__container .about__box .about-text h2 {
-        color: var(--color-white);
         font-size: 1.4rem;
-    }
-    .about .about__container .about__box .about-text p {
-        color: var(--color-text);
     }
     .about__box .skills {
         background: var(--color-white);
-        border-radius: .5rem;
+        border-radius: 1rem;
+    }
+    .about__box .skills .skill-item h4 {
+        color: var(--color-dark);
+    }
+    .about__box .skills .skill-item .progress .skill-percent {
+        color: var(--color-dark);
     }
 
     /*==========Services==========*/
     .services-description h2 {
-        color: var(--color-white);
         font-size: 1.4rem;
-    }
-    .services-description p {
-        color: var(--color-text);
     }
     .services-cards {
         flex-direction: column;
@@ -952,17 +898,6 @@ footer {
     }
     .card:nth-child(3) {
         padding-right: 0;
-    }
-
-    /*==========Portfolio==========*/
-    .portfolio-text h2 {
-        color: var(--color-white);
-    }
-    .portfolio-text, .porfolio-info {
-        color: var(--color-text);
-    }
-    .portfolio-icon:hover {
-        color: var(--color-primary);
     }
 
     /*==========Footer==========*/
