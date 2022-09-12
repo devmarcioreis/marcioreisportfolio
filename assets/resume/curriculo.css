@@ -311,6 +311,12 @@ a {
         align-items: center;
         margin: auto;
     }
+    .curriculo .content-box .left .home {
+        margin: auto;
+    }
+    .curriculo .content-box .left .language {
+        width: 100%;
+    }
     .curriculo .content-box .right {
         width: 100vw;
         margin: auto;
