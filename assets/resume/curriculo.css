@@ -17,10 +17,6 @@
 /*==========Body==========*/
 body {
     background: linear-gradient(#00053F, #7597de);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
 }
 a {
     color: #333;
@@ -28,27 +24,19 @@ a {
 
 /*==========Curriculo==========*/
 .curriculo {
-    position: relative;
-    width: 100%;
-    width: 1000px;
     background: #fff;
-    margin: 50px;
-    box-shadow: 0 50px 75px rgba(0, 0, 0, 0.1);
-    border-left: 50px solid #fff;
-    border-right: 50px solid #fff;
+    margin: 5rem auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.397);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
 }
-.curriculo .top{
+.curriculo .top {
     position: relative;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    padding: 40px;
-    padding-bottom: 0;
-}
-.curriculo .top .profile {
-    position: relative;
-    width: 100%;
-    display: flex;
-    align-items: center;
+    padding: 20px;
 }
 .curriculo .top .profile .box {
     position: relative;
@@ -58,44 +46,40 @@ a {
     aspect-ratio: 1;
 }
 .curriculo .top .profile .box img {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    margin: auto;
 }
-.curriculo .top .profile-text {
-    position: relative;
-    padding: 40px;
-    display: flex;
-    align-items: center;
+.profile-text {
+    text-align: center;
 }
-.curriculo .top .profile-text h3 {
+.top .profile .home {
+    color: #2196F3;
+}
+.profile-text h3 {
     font-size: 2em;
     letter-spacing: 0.1em;
     line-height: 1.2em;
     font-weight: 600;
     color: #333;
+    margin-top: 4rem;
 }
 .curriculo .top .profile-text h3  span {
     position: relative;
     font-size: 0.5em;
     font-weight: 300;
-    top: -10px;
+    top: -15px;
 }
 .curriculo .top .profile-text h3 a {
     font-size: .4em;
+    color: #2196F3;
 }
 .curriculo .content-box {
     position: relative;
-    min-height: 500px;
     display: grid;
     grid-template-columns: 1fr 2fr;
     padding: 0 40px 40px;
-}
-.curriculo .content-box .home  {
-    margin-left: 40px;
 }
 .curriculo .content-box .home a {
     color: #2196F3;
@@ -283,50 +267,26 @@ a {
 }
 
 
-
-
 /*==========Media Query==========*/
 @media (max-width: 768px) {
     .curriculo {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        width: auto;
+        width: 100%;
+        margin: 0 auto;
     }
     .curriculo .top {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-    .curriculo .top .profile .box {
-        width: 30%;
         margin: auto;
     }
-    .curriculo .top .profile-text {
-        text-align: center;
-    }
-    .curriculo .content-box .left {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .box {
         margin: auto;
-    }
-    .curriculo .content-box .left .home {
-        margin: auto;
-    }
-    .curriculo .content-box .left .language {
-        width: 100%;
-    }
-    .curriculo .content-box .right {
-        width: 100vw;
-        margin: auto;
-    }
-    .curriculo .content-box .right .about {
-        margin-right: 30px;
     }
     .curriculo .content-box {
-        display: flex;
-        flex-direction: column;
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 10px 20px;
+        place-items: center;
     }
 
 }
