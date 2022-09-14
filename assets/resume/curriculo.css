@@ -35,21 +35,22 @@ a {
 .curriculo .top {
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
     padding: 20px;
 }
 .curriculo .top .profile .box {
     position: relative;
-    width: 60%;
+    width: 80%;
     border-radius: 50%;
     overflow: hidden;
     aspect-ratio: 1;
+    margin-left: 60px;
+    margin-top: 20px;
 }
 .curriculo .top .profile .box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    margin: auto;
 }
 .profile-text {
     text-align: center;
@@ -279,9 +280,11 @@ a {
         align-items: center;
         margin: auto;
     }
-    .box {
+    .curriculo .top .profile .box {
         margin: auto;
+        width: 40%;
     }
+    
     .curriculo .content-box {
         width: 100%;
         grid-template-columns: 1fr;
